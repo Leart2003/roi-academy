@@ -1,7 +1,12 @@
-import "./App.css"
+import "./App.css";
+import Loginform from "./components/Loginform/Loginform";
 
 function App() {
-  return <div className="App"></div>
+  return (
+    <div className="App">
+      <Loginform />
+    </div>
+  );
 }
 
-export default App
+export default App;
