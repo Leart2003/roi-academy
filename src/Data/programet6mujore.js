@@ -13,6 +13,7 @@ const programet = [
   },
   {
     id: 2,
+    imageUrl: "assets/images/DIGITAL-MARKETING-1536x864.png",
     emriProgramit: "Digital Marketing",
     koha: "6 muaj",
     description:
@@ -24,6 +25,7 @@ const programet = [
   },
   {
     id: 3,
+    imageUrl: "assets/images/CYBER-SECURITY-2-1536x864.png",
     emriProgramit: "Cyber Security",
     koha: "6 muaj",
     description:
@@ -35,6 +37,7 @@ const programet = [
   },
   {
     id: 4,
+    imageUrl: "assets/images/DESIGN-VIDEO-1536x864.png",
     emriProgramit: "Design & Video",
     koha: "6 muaj",
     description:
@@ -46,6 +49,7 @@ const programet = [
   },
   {
     id: 5,
+    imageUrl: "assets/images/FutureGeneartions-1536x864.png",
     emriProgramit: "FutureGenerations",
     koha: "1 - 3 vite",
     description:
@@ -57,6 +61,7 @@ const programet = [
   },
   {
     id: 6,
+    imageUrl: "assets/images/ROI-Kids-1536x864.png",
     emriProgramit: "Roi Kids",
     koha: "6 - 12 muaj",
     description:
