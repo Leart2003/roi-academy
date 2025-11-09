@@ -1,0 +1,48 @@
+.container {
+  width: 100%;
+  height: 476px;
+  display: flex;
+  justify-content: start;
+  padding: 64px, 52px;
+  font-family: sans-serifgit;
+}
+
+.container ul {
+  list-style: none;
+  text-align: start;
+}
+
+.logo {
+  text-align: ;
+}
+
+.contact {
+  width: 23%;
+}
+
+.programs {
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+.quick-links {
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+.subscribe {
+  width: 23%;
+}
+
+.form {
+  display: flex;
+  display: inline;
+}
+
+.button {
+  width: 50%;
+}
