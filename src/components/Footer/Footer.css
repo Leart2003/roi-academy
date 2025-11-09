@@ -1,48 +1,144 @@
-.container {
+.footer-container {
   width: 100%;
-  height: 476px;
+  height: 316px;
   display: flex;
-  justify-content: start;
-  padding: 64px, 52px;
-  font-family: sans-serifgit;
+  padding: 64px 52px;
+  font-size: 14px;
 }
 
-.container ul {
+.footer-container h4 {
+  font-size: 17px;
+  margin: 0;
+}
+
+.footer-container ul {
   list-style: none;
   text-align: start;
 }
 
-.logo {
-  text-align: ;
+.footer-container li {
+  padding-left: 5px;
+}
+
+.roi-logo {
+  justify-self: flex-start;
+  margin-left: 40px;
+  margin-top: 20px;
+  height: 42px;
+  width: 100px;
 }
 
 .contact {
-  width: 23%;
+  width: 24%;
+  line-height: 2;
+}
+
+.contact span {
+  padding-left: 5px;
 }
 
 .programs {
   width: 23%;
   display: flex;
   flex-direction: column;
+  vertical-align: baseline;
   text-align: start;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  padding: 10px;
+  font-size: 15px;
+  line-height: 2;
+  font-weight: 500;
 }
 
 .quick-links {
   width: 23%;
   display: flex;
   flex-direction: column;
+  vertical-align: baseline;
   text-align: start;
+  line-height: 2;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 10px;
 }
 
 .subscribe {
-  width: 23%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 10px;
+  line-height: 2;
+  font-size: 15px;
+  font-weight: 500;
 }
 
 .form {
   display: flex;
+  align-items: start;
   display: inline;
+  font-size: 15px;
+  padding-top: 10px;
 }
 
-.button {
-  width: 50%;
+.submit-button {
+  margin-left: 5px;
+  height: 40px;
+  width: 90px;
+  border-radius: 8px;
+  border: none;
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+  background: #1e2432;
+}
+
+.input-style {
+  width: 171px;
+  height: 26px;
+  padding-left: 5px;
+  background: #eeeeee;
+  border: none;
+  font-weight: 600;
+  color: #7a7a7a;
+  padding: 6px 12px;
+}
+
+.input-style::placeholder {
+  color: #afafaf;
+}
+
+.roi-holding {
+  width: 175px;
+  height: 75px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.btn-nav {
+  display: flex;
+  justify-items: flex-start;
+  padding-top: 10px;
+}
+
+.small-btn {
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+
+.copyrights {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 97.5px;
+  background: #f3f3f36b;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
 }
