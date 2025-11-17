@@ -1,4 +1,4 @@
-const programet = [
+const programet6mujore = [
   {
     id: 1,
     imageUrl: "assets/images/PROGRAMIM-2-1536x864.png",
