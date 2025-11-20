@@ -1,9 +1,14 @@
-import React from "react";
+import React from "react"
 
-const ProgramCard = ({ title, installments, methodology, bullets, badgeColor }) => {
+const ProgramCard = ({
+  title,
+  installments,
+  methodology,
+  bullets,
+  badgeColor,
+}) => {
   return (
     <div className="program-card">
-      
       <span className="program-badge" style={{ backgroundColor: badgeColor }}>
         {methodology}
       </span>
@@ -21,7 +26,7 @@ const ProgramCard = ({ title, installments, methodology, bullets, badgeColor }) 
         <button className="apply-btnn">Apply Now</button>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ProgramCard;
+export default ProgramCard
