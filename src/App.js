@@ -4,6 +4,7 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import ProgramsSection from "./components/Programs/ProgramsSection";
 import MonthlyProgram from "./components/MonthlyProgram/MonthlyProgram";
+import OurTeam from "./components/OurTeam/OurTeam";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Loginform />
       <MonthlyProgram />
       <ProgramsSection />
+      <OurTeam />
       <Footer />
     </div>
   );

@@ -1,0 +1,39 @@
+.team-card {
+  background: #ffffff;
+  border-radius: 12px;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 15px;
+  margin-bottom: 20px;
+  padding: 24px 12px;
+}
+
+.team-card img.team-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  align-content: center;
+}
+
+.team-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.team-text .name {
+  font-size: 18px;
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.team-text .role {
+  font-size: 14px;
+  color: #64748b;
+  text-align: start;
+}

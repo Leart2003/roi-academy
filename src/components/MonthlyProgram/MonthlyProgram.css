@@ -1,12 +1,12 @@
 .cards-wrapper {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 25px;
   justify-content: flex-start;
-  padding: 20px;
+  padding: 65px;
 }
 .course-card {
-  width: 350px;
+  width: 425px;
   background: white;
   border-radius: 18px;
   overflow: hidden;
