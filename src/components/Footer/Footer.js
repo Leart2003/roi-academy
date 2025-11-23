@@ -6,6 +6,7 @@ import { far } from "@fortawesome/free-regular-svg-icons";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 
 library.add(fas, far, fab);
+
 const Footer = () => {
   return (
     <div className="footer-div">
