@@ -1,4 +1,4 @@
-export const teamRows = [
+export const teamRow1 = [
   [
     {
       name: "Fatbardhë Kiqina",
@@ -21,7 +21,8 @@ export const teamRows = [
       img: "/assets/images/simona.png",
     },
   ],
-
+];
+export const teamRow2 = [
   [
     {
       name: "Blerta Dedinca",
@@ -64,6 +65,8 @@ export const teamRows = [
       img: "/assets/images/ermir.png",
     },
   ],
+];
+export const teamRow3 = [
   [
     {
       name: "Donat Krasniqi",

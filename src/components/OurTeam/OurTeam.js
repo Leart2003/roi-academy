@@ -1,17 +1,13 @@
 import "./OurTeam.css";
-import { teamRows } from "../../Data/teamData.js";
+import { teamRow1, teamRow2, teamRow3 } from "../../Data/teamData.js";
 import TeamSliderRow from "./TeamSliderRow";
 
 const OurTeam = () => {
-  const renderTeamRows = () => {
-    return (
-      <div className="team-container">
-        {teamRows.map((row, index) => (
-          <TeamSliderRow key={index} people={row} />
-        ))}
-      </div>
-    );
-  };
+  // teamRow1,2,3 are defined in your data as [[...items]], so use [0]
+  const row1 = teamRow1 && teamRow1[0] ? teamRow1[0] : [];
+  const row2 = teamRow2 && teamRow2[0] ? teamRow2[0] : [];
+  const row3 = teamRow3 && teamRow3[0] ? teamRow3[0] : [];
+
   return (
     <div className="ot-container">
       <div className="ot-head-container">
@@ -23,7 +19,11 @@ const OurTeam = () => {
           të investojnë në edukimin dhe zhvillimin e tyre profesional.
         </p>
       </div>
-      {renderTeamRows()}
+
+      {/* Pass each row array separately */}
+      <TeamSliderRow teamRow={row1} />
+      <TeamSliderRow teamRow={row2} />
+      <TeamSliderRow teamRow={row3} />
     </div>
   );
 };
