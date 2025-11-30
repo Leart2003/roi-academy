@@ -1,22 +1,16 @@
-import "./App.css";
-import Loginform from "./components/Loginform/Loginform";
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
-import ProgramsSection from "./components/Programs/ProgramsSection";
-import MonthlyProgram from "./components/MonthlyProgram/MonthlyProgram";
-import OurTeam from "./components/OurTeam/OurTeam";
-
+import "./App.css"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import HomePage from "./Pages/HomePage"
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Loginform />
-      <MonthlyProgram />
-      <ProgramsSection />
-      <OurTeam />
-      <Footer />
+      <Router>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+        </Routes>
+      </Router>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
