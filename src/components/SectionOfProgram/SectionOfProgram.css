@@ -1,0 +1,15 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.program-section {
+  background-color: aliceblue;
+  color: grey;
+  width: 35%;
+  margin: 30px auto;
+  padding: 50px;
+  border-radius: 10px;
+  text-align: left;
+}
