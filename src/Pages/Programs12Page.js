@@ -1,7 +1,7 @@
 import "./Programs12Page.css";
-import OurTeam from "../OurTeam/OurTeam";
+import OurTeam from "../components/OurTeam/OurTeam";
 import { useNavigate } from "react-router-dom";
-import ProgramsSection from "../Programs/ProgramsSection";
+import ProgramsSection from "../components/Programs/ProgramsSection";
 
 const Programs12Page = () => {
   const navigate = useNavigate();
