@@ -4,13 +4,13 @@
   box-sizing: border-box;
 }
 
-
-
 .future-generation h1 {
   color: white;
 }
 
 .future-generation {
-  background-color: #1e2432; /* sfondi i div-it */
-  color: #ffffff;            /* ngjyra e tekstit */
+  background-color: #1e2432;
+  color: #ffffff;
+  line-height: 2;
+  padding: 20px;
 }
