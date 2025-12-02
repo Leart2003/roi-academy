@@ -6,11 +6,13 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header__left">
-        <img
-          src="assets/images/roi-academy-logo-e1750817553650.png"
-          alt="ROI Academy logo"
-          className="logo"
-        />
+        <Link to={"/"}>
+          <img
+            src="assets/images/roi-academy-logo-e1750817553650.png"
+            alt="ROI Academy logo"
+            className="logo"
+          />
+        </Link>
       </div>
 
       <div className="header__center">
@@ -18,9 +20,9 @@ const Header = () => {
           <ul className="nav-top">
             <li>Programet 6–12 mujore ▾</li>
 
-           <li className="active">
-           <Link to="/programet-1-2-mujore">Programet 1–2 mujore</Link>
-           </li>
+            <Link to="/programet-1-2-mujore">
+              <li className="active">Programet 1–2 mujore</li>
+            </Link>
 
             <li>Future Generations</li>
             <li>ROI Kids</li>

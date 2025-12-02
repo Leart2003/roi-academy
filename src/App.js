@@ -6,8 +6,9 @@ import Footer from "./components/Footer/Footer";
 import ProgramsSection from "./components/Programs/ProgramsSection";
 import MonthlyProgram from "./components/MonthlyProgram/MonthlyProgram";
 import OurTeam from "./components/OurTeam/OurTeam";
-import Programs12Page from './components/Pages/Programs12Page';
+import Programs12Page from "./components/Pages/Programs12Page";
 import ApplicationForm from "./components/Pages/ApplicationForm";
+import HomePage from "./components/Pages/HomePage";
 
 function App() {
   return (
@@ -15,22 +16,9 @@ function App() {
       <Header />
 
       <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-              <Loginform />
-              <MonthlyProgram />
-              <ProgramsSection />
-              <OurTeam />
-            </>
-          }
-        />
-       <Route
-       path="/programet-1-2-mujore"
-       element={<Programs12Page ProgramsSection={ProgramsSection}  OurTeam={OurTeam}/>}
-/>
- <Route path="/application" element={<ApplicationForm />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/programet-1-2-mujore" element={<Programs12Page />} />
+        <Route path="/application" element={<ApplicationForm />} />
       </Routes>
 
       <Footer />
@@ -39,4 +27,3 @@ function App() {
 }
 
 export default App;
-

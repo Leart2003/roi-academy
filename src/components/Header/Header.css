@@ -10,6 +10,10 @@
   z-index: 9999;
 }
 
+.header__left {
+  cursor: pointer;
+}
+
 .logo {
   height: 40px;
 }
@@ -53,7 +57,7 @@
 
 .apply-bttn {
   background-color: #1e2432;
-  color:  #FFFFFF;
+  color: #ffffff;
   font-size: 16px;
   font-family: Poppins, sans-serif;
   border: none;
@@ -86,7 +90,6 @@
   color: #7a7a7a;
   text-decoration: none;
 }
-
 
 .header__nav li.active a {
   color: #7a7a7a;

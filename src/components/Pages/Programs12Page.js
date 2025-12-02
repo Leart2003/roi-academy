@@ -1,23 +1,24 @@
-import React from "react";
 import "./Programs12Page.css";
 import OurTeam from "../OurTeam/OurTeam";
 import { useNavigate } from "react-router-dom";
+import ProgramsSection from "../Programs/ProgramsSection";
 
-const Programs12Page = ({ ProgramsSection, OurTeam }) => {
-   const navigate = useNavigate();
+const Programs12Page = () => {
+  const navigate = useNavigate();
 
   const handleApplyClick = () => {
-    navigate("/application"); 
+    navigate("/application");
   };
   return (
     <div className="programs12-container">
+      {/* TODO Make this section on component <HeroSection /> */}
       <div className="hero-section">
         <h1>Mëso fushë të re në vetëm 2 muaj</h1>
-       <button className="apply-bbtn" onClick={handleApplyClick}>
+        <button className="apply-bbtn" onClick={handleApplyClick}>
           Apply Now <i className="fa-solid fa-arrow-right"></i>
         </button>
       </div>
-
+      {/* TODO Make this section on component <StatsSection /> */}
       <div className="stats-section">
         <div className="stat-box">
           <h2>+6000</h2>
@@ -44,8 +45,8 @@ const Programs12Page = ({ ProgramsSection, OurTeam }) => {
           <p>Shtete me prezencë fizike</p>
         </div>
       </div>
-      {ProgramsSection && <ProgramsSection />}
-      {OurTeam && <OurTeam />}
+      <ProgramsSection />
+      <OurTeam />
     </div>
   );
 };
