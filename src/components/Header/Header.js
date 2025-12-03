@@ -1,6 +1,6 @@
-import React from "react";
-import "./Header.css";
-import { Link } from "react-router-dom";
+import React from "react"
+import "./Header.css"
+import { Link } from "react-router-dom"
 
 const Header = () => {
   return (
@@ -18,7 +18,19 @@ const Header = () => {
       <div className="header__center">
         <nav className="header__nav">
           <ul className="nav-top">
-            <li>Programet 6–12 mujore ▾</li>
+            <div class="dropdown">
+              <li className="">
+                <Link to={"/Programs6"}>
+                  <a className="active">Programet 6–12 mujore ▾</a>
+                </Link>
+                <div className="dropdown-content">
+                  <span className="anchor">Të gjitha programet</span>
+                  <span className="anchor">Trajnim për programim</span>
+                  <span className="anchor">Trajnim për Digjital Marketing</span>
+                  <span className="anchor">Trajnim për Siguri Kibernetike</span>
+                </div>
+              </li>
+            </div>
 
             <Link to="/programet-1-2-mujore">
               <li className="active">Programet 1–2 mujore</li>
@@ -37,7 +49,7 @@ const Header = () => {
         <button className="apply-bttn">Apply Now</button>
       </div>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header
