@@ -1,13 +1,13 @@
 .form-wrappeer {
   max-width: 1100px;
-  margin: 40px auto;
+  margin: 90px auto;
   padding: 0 20px;
   font-family: Poppins, sans-serif;
   color: #1e2432;
 }
 
 .form-tittle {
-  font-size: 28px;
+  font-size: 25px;
   margin: 0 0 8px 0;
   font-weight: 700;
   color: #1e2432;
@@ -16,6 +16,8 @@
 .form-suub {
   color: #7a7a7a;
   margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 16px;
 }
 
 .aapp-form {
@@ -43,8 +45,9 @@
 }
 
 .laabel-text {
-  font-size: 13px;
-  color: #7a7a7a;
+  font-size: 14px;
+  color: #a1a1a1;
+  margin: 0px 0px 3px;
 }
 
 .inpuut,
@@ -89,6 +92,7 @@
   text-transform: uppercase;
   cursor: pointer;
   box-shadow: none;
+  font-size: 14px;
 }
 
 .subbmit-btn:hover {

@@ -1,8 +1,14 @@
 import React from "react";
 import "./Header.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Header = () => {
+  const navigate = useNavigate();
+
+  const handleApplyClick = () => {
+    navigate("/application");
+  };
+
   return (
     <header className="header">
       <div className="header__left">
@@ -34,7 +40,9 @@ const Header = () => {
       </div>
 
       <div className="header__right">
-        <button className="apply-bttn">Apply Now</button>
+        <button className="apply-bttn" onClick={handleApplyClick}>
+          Apply Now
+        </button>
       </div>
     </header>
   );
