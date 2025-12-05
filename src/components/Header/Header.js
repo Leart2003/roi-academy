@@ -24,15 +24,28 @@ const Header = () => {
       <div className="header__center">
         <nav className="header__nav">
           <ul className="nav-top">
-            <li>Programet 6–12 mujore ▾</li>
+            <div className="dropdown">
+              <li>
+                <Link to={"/Programs6"} className="active">
+                  Programet 6–12 mujore ▾
+                </Link>
+                <div className="dropdown-content">
+                  <span className="anchor">Të gjitha programet</span>
+                  <span className="anchor">Trajnim për programim</span>
+                  <span className="anchor">Trajnim për Digjital Marketing</span>
+                  <span className="anchor">Trajnim për Siguri Kibernetike</span>
+                </div>
+              </li>
+            </div>
 
-            <Link to="/programet-1-2-mujore">
-              <li className="active">Programet 1–2 mujore</li>
-            </Link>
+            <li className="active">
+              <Link to="/programet-1-2-mujore">Programet 1–2 mujore</Link>
+            </li>
 
             <li>Future Generations</li>
             <li>ROI Kids</li>
           </ul>
+
           <ul className="nav-bottom">
             <li>Rreth ROI Academy</li>
           </ul>
@@ -49,3 +62,4 @@ const Header = () => {
 };
 
 export default Header;
+
