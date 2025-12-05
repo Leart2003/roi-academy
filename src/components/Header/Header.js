@@ -1,8 +1,14 @@
-import React from "react"
-import "./Header.css"
-import { Link } from "react-router-dom"
+import React from "react";
+import "./Header.css";
+import { Link, useNavigate } from "react-router-dom";
 
 const Header = () => {
+  const navigate = useNavigate();
+
+  const handleApplyClick = () => {
+    navigate("/application");
+  };
+
   return (
     <header className="header">
       <div className="header__left">
@@ -18,10 +24,10 @@ const Header = () => {
       <div className="header__center">
         <nav className="header__nav">
           <ul className="nav-top">
-            <div class="dropdown">
-              <li className="">
-                <Link to={"/Programs6"}>
-                  <a className="active">Programet 6–12 mujore ▾</a>
+            <div className="dropdown">
+              <li>
+                <Link to={"/Programs6"} className="active">
+                  Programet 6–12 mujore ▾
                 </Link>
                 <div className="dropdown-content">
                   <span className="anchor">Të gjitha programet</span>
@@ -32,13 +38,14 @@ const Header = () => {
               </li>
             </div>
 
-            <Link to="/programet-1-2-mujore">
-              <li className="active">Programet 1–2 mujore</li>
-            </Link>
+            <li className="active">
+              <Link to="/programet-1-2-mujore">Programet 1–2 mujore</Link>
+            </li>
 
             <li>Future Generations</li>
             <li>ROI Kids</li>
           </ul>
+
           <ul className="nav-bottom">
             <li>Rreth ROI Academy</li>
           </ul>
@@ -46,10 +53,13 @@ const Header = () => {
       </div>
 
       <div className="header__right">
-        <button className="apply-bttn">Apply Now</button>
+        <button className="apply-bttn" onClick={handleApplyClick}>
+          Apply Now
+        </button>
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
+
