@@ -42,7 +42,11 @@ const Header = () => {
               <Link to="/programet-1-2-mujore">Programet 1–2 mujore</Link>
             </li>
 
-            <li>Future Generations</li>
+            <li>
+              <Link to={"/future-generations "} className="active">
+                Future Generations
+              </Link>
+            </li>
             <li>ROI Kids</li>
           </ul>
 
@@ -62,4 +66,3 @@ const Header = () => {
 };
 
 export default Header;
-
