@@ -3,6 +3,7 @@ import "./FutureGeneration.css";
 import StatCard from "../StatCard/StatCard";
 import SectionOfProgram from "../SectionOfProgram/SectionOfProgram";
 import OurTeam from "../OurTeam/OurTeam";
+import Footer from "../Footer/Footer";
 
 const FutureGeneration = () => {
   return (
@@ -68,6 +69,7 @@ const FutureGeneration = () => {
         </div>
       </div>
       <OurTeam />
+
     </div>
   );
 };
