@@ -1,5 +1,3 @@
-import Header from "../components/Header/Header"
-import Footer from "../components/Footer/Footer"
 import OurTeam from "../components/OurTeam/OurTeam"
 import SixMonthSection from "../components/SixMonthSection/SixMonthSection"
 import MonthlyPrograms from "../components/MonthlyProgram/MonthlyProgram"
@@ -9,16 +7,14 @@ import StatsSection from "../Pages/StatsSection"
 const Programs6 = () => {
   return (
     <div>
-      <Header />
       <SixMonthSection />
       <StatsSection />
       <MonthlyPrograms />
       <StudentFeedback />
       <OurTeam />
       <ImageSlider />
-      <Footer />
     </div>
   )
 }
 
-export default Programs6
+export default Programs6;

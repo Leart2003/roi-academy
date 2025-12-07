@@ -6,16 +6,19 @@ import Programs12Page from "./Pages/Programs12Page"
 import ApplicationForm from "./Pages/ApplicationForm"
 import HomePage from "./Pages/HomePage"
 import Programs6 from "./Pages/Programs6"
+import Layout from "./components/Layout/Layout"
 
 function App() {
   return (
     <BrowserRouter>
+    <Layout>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/programet-1-2-mujore" element={<Programs12Page />} />
         <Route path="/application" element={<ApplicationForm />} />
         <Route path="/Programs6" element={<Programs6 />}></Route>
       </Routes>
+      </Layout>
     </BrowserRouter>
   )
 }
