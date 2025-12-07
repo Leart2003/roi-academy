@@ -1,0 +1,43 @@
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 80px;
+  gap: 80px;
+  color: white;
+  background: #1e2432;
+}
+.left-div {
+  align-items: center;
+  justify-content: center;
+}
+.apply-title {
+  font-size: 35px;
+}
+.apply-button {
+  background-color: #1e2432;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: Poppins, sans-serif;
+  border: none;
+  padding: 20px 40px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 2.5px solid white;
+}
+
+.apply-button:hover {
+  background-color: white;
+  color: black;
+}
+.program-form-wrapper {
+  width: 417px;
+  background-color: #ffffff;
+  padding: 35px;
+  border-radius: 20px;
+
+  color: #e3e3e3;
+  margin-left: auto;
+  flex-shrink: 0;
+}
