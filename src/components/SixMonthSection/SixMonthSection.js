@@ -2,12 +2,14 @@ import "./SixMonthSection.css"
 
 import ProgramForm from "../ProgramForm/ProgramForm"
 
-const ApplyForm = () => {
+const ApplyForm = ({ title, description }) => {
   return (
     <>
       <div className="main-container">
         <div className="left-div">
-          <h1 className="apply-title">Bëhu profesionist në vetëm 6 muaj</h1>
+          <h1 className="apply-title">{title}</h1>
+          <p className="description"></p>
+
           <button className="apply-button">Apply Now →</button>
         </div>
 
