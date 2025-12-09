@@ -1,4 +1,5 @@
 import React from "react"
+import { useNavigate } from "react-router-dom"
 
 const ProgramCard = ({
   title,
@@ -7,6 +8,12 @@ const ProgramCard = ({
   bullets,
   badgeColor,
 }) => {
+  const navigate = useNavigate()
+
+  const handleApplyClick = () => {
+    navigate("/application")
+  }
+
   return (
     <div className="program-card">
       <span className="program-badge" style={{ backgroundColor: badgeColor }}>
@@ -23,7 +30,9 @@ const ProgramCard = ({
 
       <div className="program-bottom">
         <span className="installments">{installments}</span>
-        <button className="apply-btnn">Apply Now</button>
+        <button className="apply-btnn" onClick={handleApplyClick}>
+          Apply Now
+        </button>
       </div>
     </div>
   )

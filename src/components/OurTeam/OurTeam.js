@@ -4,9 +4,9 @@ import TeamSliderRow from "./TeamSliderRow";
 
 const OurTeam = () => {
   // teamRow1,2,3 are defined in your data as [[...items]], so use [0]
-  const row1 = teamRow1 && teamRow1[0] ? teamRow1[0] : [];
-  const row2 = teamRow2 && teamRow2[0] ? teamRow2[0] : [];
-  const row3 = teamRow3 && teamRow3[0] ? teamRow3[0] : [];
+  const row1 = teamRow1 ?? [];
+  const row2 = teamRow2 ?? [];
+  const row3 = teamRow3 ?? [];
 
   return (
     <div className="ot-container">

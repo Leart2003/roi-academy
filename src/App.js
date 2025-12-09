@@ -1,32 +1,24 @@
-import "./App.css";
-import Loginform from "./components/Loginform/Loginform";
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
-import ProgramsSection from "./components/Programs/ProgramsSection"; // korrigjuar
-import MonthlyProgram from "./components/MonthlyProgram/MonthlyProgram";
-import OurTeam from "./components/OurTeam/OurTeam";
-import FutureGeneration from "./components/FutureGeneration/FutureGeneration";
-import StatCard from "./components/StatCard/StatCard";
-import SectionOfProgram from "./components/SectionOfProgram/SectionOfProgram";
+import "./App.css"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Programs12Page from "./Pages/Programs12Page"
+import ApplicationForm from "./Pages/ApplicationForm"
+import HomePage from "./Pages/HomePage"
+import Programs6 from "./Pages/Programs6"
+import Layout from "./components/Layout/Layout"
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Loginform
-        title="Krijo një karrierë të suksesshme me ROI Academy"
-        description="ROI Academy është institucion lider në ofrimin e trajnimeve profesionale në Kosovë, Shqipëri dhe Maqedoni të Veriut."
-        buttonText="Apply Now"
-      />
-      <MonthlyProgram />
-      <ProgramsSection />
-      <OurTeam />
-      <Footer />
-      <FutureGeneration />
-      <StatCard />
-      <SectionOfProgram />
-    </div>
-  );
+    <BrowserRouter>
+    <Layout>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/programet-1-2-mujore" element={<Programs12Page />} />
+        <Route path="/application" element={<ApplicationForm />} />
+        <Route path="/Programs6" element={<Programs6 />}></Route>
+      </Routes>
+      </Layout>
+    </BrowserRouter>
+  )
 }
 
-export default App;
+export default App

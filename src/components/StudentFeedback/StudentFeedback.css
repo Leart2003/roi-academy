@@ -1,0 +1,66 @@
+.feedback-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 700px;
+  /* background-color: #64748b; */
+  margin: 0 290px;
+}
+
+.feedback-container h2 {
+  font-size: 37.5px;
+  text-align: center;
+}
+.feedback-container .intro {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.feedback-card {
+  background: #1e2432;
+  border-radius: 12px;
+  /* width: 536.5px; */
+  display: flex;
+  flex-direction: column;
+  margin: 20px 10px;
+  padding: 40px;
+  height: 250px;
+}
+
+.feedback-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.feedback-info img.student-img {
+  width: 98px;
+  height: 98px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  align-content: center;
+  margin-right: 15px;
+}
+
+.feedback-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+.feedback-text .name {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.feedback-text .role {
+  font-size: 14px;
+  text-align: start;
+}
+
+.feedback-card p {
+  color: white;
+  line-height: 1.5;
+}
