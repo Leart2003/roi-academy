@@ -1,0 +1,16 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+.future-generation h1 {
+  color: white;
+}
+
+.future-generation {
+  background-color: #1e2432; /* sfondi i div-it */
+  color: #ffffff;            /* ngjyra e tekstit */
+}
