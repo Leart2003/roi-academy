@@ -1,0 +1,135 @@
+.program-sectioni {
+  height: 464px;
+  background: #1e2432;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.program-containeri {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  color: #ffffff;
+  gap: 20;
+}
+
+.program-lefti {
+  align-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  width: 55%;
+  margin: none;
+  padding: 10px;
+}
+
+.tittlei {
+  font-size: 37.5px;
+  font-weight: 600;
+  color: #ffffff;
+  font-family: Poppins, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.subttitlei {
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 37.5px;
+  font-family: Poppins, sans-serif;
+  word-wrap: none;
+  margin: 0;
+  line-height: 1;
+}
+
+.dessci {
+  color: #ffffff;
+  line-height: 1.6;
+  text-align: left;
+  font-size: 16px;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  margin-top: 22px;
+  width: 100%;
+}
+
+.apply-btnn {
+  padding: 16px 40px;
+  background: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: Poppins, sans-serif;
+}
+
+.apply-btnn:hover {
+  background: #ffffff;
+  color: #1e2432;
+}
+.program-formmi {
+  background: #ffffff;
+  padding: 23px;
+  border-radius: 20px;
+  width: 32%;
+  margin-right: 100px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.fielddi {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+}
+
+.fielddi label {
+  font-size: 14px;
+  font-family: Lato, sans-serif;
+  font-weight: 500;
+  color: #a1a1a1;
+}
+
+.program-formm textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 13px;
+}
+
+.roww {
+  display: flex;
+  gap: 25px;
+}
+
+.submit-btnn {
+  background: #1e2432;
+  color: #ffffff;
+  padding: 0px 20px;
+  border-radius: 12px;
+  font-weight: 600;
+  min-height: 40px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.submit-btnn:hover {
+  opacity: 0.95;
+  background-color: #4054b2;
+}
+
+.roww .fieldd input {
+  margin-right: 12px;
+}
