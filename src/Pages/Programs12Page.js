@@ -3,6 +3,7 @@ import OurTeam from "../components/OurTeam/OurTeam";
 import { useNavigate } from "react-router-dom";
 import ProgramsSection from "../components/Programs/ProgramsSection";
 import StatsSection from "./StatsSection";
+import StudentFeedback from "../components/StudentFeedback/StudentFeedback";
 
 const Programs12Page = () => {
   const navigate = useNavigate();
@@ -20,6 +21,7 @@ const Programs12Page = () => {
       </div>
       <StatsSection />
       <ProgramsSection />
+      <StudentFeedback />
       <OurTeam />
     </div>
   );
