@@ -30,7 +30,7 @@ const ProgramCard = ({
 
       <div className="program-bottom">
         <span className="installments">{installments}</span>
-        <button className="apply-btnn" onClick={handleApplyClick}>
+        <button className="applyy-btnn" onClick={handleApplyClick}>
           Apply Now
         </button>
       </div>
