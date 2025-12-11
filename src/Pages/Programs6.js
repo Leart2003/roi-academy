@@ -7,7 +7,7 @@ import StatsSection from "../Pages/StatsSection"
 const Programs6 = () => {
   return (
     <div>
-      <SixMonthSection />
+      <SixMonthSection title={"Bëhu profesionist në vetëm 6 muaj"} />
       <StatsSection />
       <MonthlyPrograms />
       <StudentFeedback />
@@ -17,4 +17,4 @@ const Programs6 = () => {
   )
 }
 
-export default Programs6;
+export default Programs6

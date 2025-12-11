@@ -1,19 +1,14 @@
 import "./Loginform.css";
 
-const Loginform = () => {
+const Loginform = ({ title, description, buttonText }) => {
   return (
     <>
       <div className="container">
-        <h1>
-          Krijo një karrierë të suksesshme me
-          <span>ROI Academy</span>
-        </h1>
-        <p>
-          ROI Academy është institucion lider në ofrimin e trajnimeve
-          profesionale në Kosovë, Shqipëri dhe Maqedoni të Veriut.
-        </p>
+        <h1>{title}</h1>
 
-        <button className="apply-btn">Apply Now</button>
+        <p>{description}</p>
+
+        <button className="apply-button ">{buttonText || "Apply Now"}</button>
       </div>
 
       <div className="form-container">
@@ -21,24 +16,24 @@ const Loginform = () => {
           <div className="row">
             <div className="field">
               <label htmlFor="name">Emër</label>
-              <input id="name" type="text" placeholder="" />
+              <input id="name" type="text" />
             </div>
 
             <div className="field">
               <label htmlFor="surname">Mbiemër</label>
-              <input id="surname" type="text" placeholder="" />
+              <input id="surname" type="text" />
             </div>
           </div>
 
           <div className="row">
             <div className="field">
               <label htmlFor="phone">Numri i telefonit</label>
-              <input id="phone" type="tel" placeholder="" />
+              <input id="phone" type="tel" />
             </div>
 
             <div className="field">
               <label htmlFor="email">Email</label>
-              <input id="email" type="email" placeholder="" />
+              <input id="email" type="email" />
             </div>
           </div>
 
@@ -46,12 +41,12 @@ const Loginform = () => {
             <label htmlFor="training">
               Për cilin trajnim jeni i/e interesuar?
             </label>
-            <input id="training" type="text" placeholder="" />
+            <input id="training" type="text" />
           </div>
 
           <div className="field full">
             <label htmlFor="message">Mesazhi</label>
-            <textarea id="message" rows="4" placeholder="" />
+            <textarea id="message" rows="4" />
           </div>
 
           <button type="submit" className="submit-btn">

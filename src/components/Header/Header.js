@@ -1,13 +1,13 @@
-import React from "react";
-import "./Header.css";
-import { Link, useNavigate } from "react-router-dom";
+import React from "react"
+import "./Header.css"
+import { Link, useNavigate } from "react-router-dom"
 
 const Header = () => {
-  const navigate = useNavigate();
+  const navigate = useNavigate()
 
   const handleApplyClick = () => {
-    navigate("/application");
-  };
+    navigate("/application")
+  }
 
   return (
     <header className="header">
@@ -45,7 +45,10 @@ const Header = () => {
             </li>
 
             <li>Future Generations</li>
-            <li>ROI Kids</li>
+            <Link to={"/Roi-Kids"}>
+              {" "}
+              <li>ROI Kids</li>
+            </Link>
           </ul>
 
           <ul className="nav-bottom">
@@ -60,8 +63,7 @@ const Header = () => {
         </button>
       </div>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
-
+export default Header
