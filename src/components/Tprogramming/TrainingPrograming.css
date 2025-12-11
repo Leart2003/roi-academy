@@ -1,0 +1,126 @@
+.program-sectioon {
+  background: #1e2432;
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.program-container {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffffff;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.program-left {
+  flex: 1;
+  gap: 10px;
+  line-height: normal;
+}
+
+.tittle {
+  font-size: 37.5px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-family: Poppins, sans-serif;
+}
+
+.subttitle {
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-size: 37.5px;
+  font-family: Poppins, sans-serif;
+  margin-top: 20px;
+}
+
+.dessc {
+  color: #ffffff;
+  line-height: 1.6;
+  max-width: 550px;
+  margin-bottom: 30px;
+  text-align: left;
+  font-size: 16px;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+}
+
+.apply-btnn {
+  padding: 20px 40px;
+  background: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: Poppins, sans-serif;
+}
+
+.apply-btnn:hover {
+  background: #ffffff;
+  color: #1e2432;
+}
+.program-formm {
+  background: #ffffff;
+  padding: 28px;
+  border-radius: 20px;
+  width: 300px;
+  height: 460px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.fieldd {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+}
+
+.fieldd label {
+  font-size: 14px;
+  font-family: Lato, sans-serif;
+  font-weight: 500;
+  color: #a1a1a1;
+}
+
+.program-formm input,
+.program-formm textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 13px;
+}
+
+.roww {
+  display: flex;
+  gap: 25px;
+}
+
+.submit-btnn {
+  background: #1e2432;
+  color: #ffffff;
+  padding: 14px;
+  border-radius: 12px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.submit-btnn:hover {
+  opacity: 0.95;
+  background-color: #4054b2;
+}
+
+.roww .fieldd input {
+  margin-right: 12px;
+}

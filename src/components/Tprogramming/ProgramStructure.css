@@ -1,0 +1,50 @@
+.program-section {
+  padding: 60px;
+  background: linear-gradient(to bottom right, #0d1221, #1b2a48);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-right: auto;
+}
+
+.program-section h2 {
+  font-size: 25px;
+  margin: 0;
+  font-family: Poppins, sans-serif;
+  color: #ffffff;
+  padding-left: 90px;
+}
+
+.program-section p {
+  margin: 0;
+  font-family: Poppins, sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+  padding-left: 90px;
+  font-weight: 400;
+}
+
+.program-lists {
+  display: flex;
+  column-gap: 50px;
+  padding-left: 90px;
+  font-weight: 520;
+  font-family: Poppins, sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+.program-lists ul {
+  max-width: 500px;
+  list-style: disc;
+  padding-left: 20px;
+  margin: 0;
+  font-weight: 450;
+}
+
+.program-lists ul li {
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}

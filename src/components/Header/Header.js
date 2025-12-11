@@ -31,7 +31,9 @@ const Header = () => {
                 </Link>
                 <div className="dropdown-content">
                   <span className="anchor">Të gjitha programet</span>
-                  <span className="anchor">Trajnim për programim</span>
+                 <Link to="/training-programming" className="anchor">
+                 Trajnim për programim
+                 </Link>
                   <span className="anchor">Trajnim për Digjital Marketing</span>
                   <span className="anchor">Trajnim për Siguri Kibernetike</span>
                 </div>
