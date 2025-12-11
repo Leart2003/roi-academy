@@ -1,4 +1,5 @@
 import ImageSlider from "../components/ImageSlider/ImageSlider"
+import OtherPrograms from "../components/OtherPrograms/OtherPrograms"
 import OurTeam from "../components/OurTeam/OurTeam"
 import SixMonthSection from "../components/SixMonthSection/SixMonthSection"
 import StudentFeedback from "../components/StudentFeedback/StudentFeedback"
@@ -21,8 +22,13 @@ const RoiKids = () => {
       <StudentFeedback />
       <OurTeam />
       <ImageSlider />
-      {/* {Missing component} */}
-      {/* {Missing component} */}
+      <div style={{ display: "flex", flexDirection: "column" }}>
+        <SixMonthSection
+          title={"Apliko dhe përfito nga oferta aktuale"}
+          description={"Për të aplikuar, ju lutem plotësoni fushat më poshtë:"}
+        />
+      </div>
+      <OtherPrograms title="Programet tjera" />
     </div>
   )
 }

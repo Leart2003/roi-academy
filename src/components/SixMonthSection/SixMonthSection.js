@@ -8,7 +8,7 @@ const ApplyForm = ({ title, description }) => {
       <div className="main-container">
         <div className="left-div">
           <h1 className="apply-title">{title}</h1>
-          <p className="description"></p>
+          <p className="description">{description}</p>
 
           <button className="apply-button">Apply Now →</button>
         </div>

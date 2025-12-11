@@ -1,11 +1,11 @@
-.cards-wrapper {
+.cards-Wrapper {
   display: flex;
   flex-wrap: wrap;
-  gap: 25px;
+  gap: 22px;
   justify-content: flex-start;
   padding: 65px;
 }
-.course-card {
+.course-Card {
   width: 330px;
   background: white;
   border-radius: 18px;
@@ -14,66 +14,60 @@
   transition: 0.25s;
 }
 
-.course-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
-}
-
-.course-img {
+.course-Img {
   width: 100%;
   height: 190px;
   object-fit: cover;
 }
 
-.course-body {
+.course-Body {
   padding: 20px;
 }
 
-.course-badge {
-  background: #001f3f;
+.course-Badge {
   color: white;
-  margin-left: -11.5rem;
-  padding: 4px 10px;
-  font-size: 8px;
-  border-radius: 6px;
+  font-size: 10px;
+  padding: 4px 4px;
+  border-radius: 7.5px;
 }
 
-.course-rating {
+.course-Rating {
   float: right;
   font-size: 14px;
   color: #222;
 }
 
-.course-rating small {
+.course-Rating small {
   color: #777;
 }
 
-.course-title {
+.course-Title {
   margin-top: 15px;
   font-size: 20px;
   font-weight: bold;
   color: #101010;
 }
 
-.course-description {
+.course-Description {
   margin: 10px 0 20px;
   font-size: 10px;
   color: #5a5a5a;
   line-height: 1.4;
 }
 
-.course-footer {
+.course-Footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.installments {
+.Installments {
   font-size: 18px;
   font-weight: 700;
+  padding-left: 15px;
 }
 
-.apply-btn {
+.apply-Btn {
   background: #1e2432;
   color: white;
   padding: 10px 18px;
@@ -82,8 +76,5 @@
   font-weight: 600;
   border: none;
   cursor: pointer;
-}
-
-.apply-btn:hover {
-  background: #000;
+  margin-right: 5px;
 }

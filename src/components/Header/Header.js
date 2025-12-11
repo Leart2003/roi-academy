@@ -26,7 +26,7 @@ const Header = () => {
           <ul className="nav-top">
             <div className="dropdown">
               <li>
-                <Link to={"/Programs6"} className="active">
+                <Link to={"/Programet-6-mujore"} className="active">
                   Programet 6–12 mujore ▾
                 </Link>
                 <div className="dropdown-content">
