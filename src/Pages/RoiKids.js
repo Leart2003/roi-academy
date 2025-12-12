@@ -4,6 +4,9 @@ import OurTeam from "../components/OurTeam/OurTeam"
 import SixMonthSection from "../components/SixMonthSection/SixMonthSection"
 import StudentFeedback from "../components/StudentFeedback/StudentFeedback"
 import StatsSection from "./StatsSection"
+import Ofer from "../components/RoiKidsOfer/roiKidsOfer"
+import RoiInfo from "../components/RoiInfo/RoiInfo"
+import QellimiSection from "../components/QellimiSection/QellimiSection"
 
 const RoiKids = () => {
   return (
@@ -15,10 +18,10 @@ const RoiKids = () => {
         }
       />
       <StatsSection />
+      <Ofer />
       {/* {Missing component} */}
-      {/* {Missing component} */}
-      {/* {Missing component} */}
-      {/* {Missing component} */}
+      <RoiInfo />
+      <QellimiSection />
       <StudentFeedback />
       <OurTeam />
       <ImageSlider />

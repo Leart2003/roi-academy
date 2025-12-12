@@ -1,0 +1,39 @@
+.info-wrapper {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 50px;
+  padding: 80px 40px;
+  background-color: rgb(255, 255, 255);
+}
+
+.info-left {
+  flex: 1;
+  max-width: 450px;
+  margin-left: 50px;
+}
+
+.info-left h2 {
+  font-size: 36px;
+  margin-bottom: 25px;
+  color: #1e2432;
+  font-size: 20px;
+}
+
+.info-left p {
+  margin-bottom: 18px;
+  line-height: 1.7;
+  color: #7a7a7a;
+
+  font-size: 17px;
+}
+
+.info-right {
+  flex: 1;
+  height: 100%;
+}
+
+.info-right img {
+  width: 100%;
+  gap: -0;
+}

@@ -1,13 +1,13 @@
-import React from "react";
-import "./Header.css";
-import { Link, useNavigate } from "react-router-dom";
+import React from "react"
+import "./Header.css"
+import { Link, useNavigate } from "react-router-dom"
 
 const Header = () => {
-  const navigate = useNavigate();
+  const navigate = useNavigate()
 
   const handleApplyClick = () => {
-    navigate("/application");
-  };
+    navigate("/application")
+  }
 
   return (
     <header className="header">
@@ -56,7 +56,9 @@ const Header = () => {
           </ul>
 
           <ul className="nav-bottom">
-            <li>Rreth ROI Academy</li>
+            <Link to={"/Rreth-Roit"}>
+              <li>Rreth ROI Academy</li>
+            </Link>
           </ul>
         </nav>
       </div>
@@ -67,7 +69,7 @@ const Header = () => {
         </button>
       </div>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header
