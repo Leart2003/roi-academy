@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import ProgramsSection from "../components/Programs/ProgramsSection";
 import StatsSection from "./StatsSection";
 import StudentFeedback from "../components/StudentFeedback/StudentFeedback";
+import ProgramsCleanView from "../components/Programs/ProgramsCleanView";
 
 const Programs12Page = () => {
   const navigate = useNavigate();
@@ -20,7 +21,7 @@ const Programs12Page = () => {
         </button>
       </div>
       <StatsSection />
-      <ProgramsSection />
+      <ProgramsCleanView />
       <StudentFeedback />
       <OurTeam />
     </div>
