@@ -24,7 +24,7 @@ const CourseCard = ({
           {methodology}
         </span>
         <span className="course-rating">
-          {rating}({numberRatings})
+          {rating && numberRatings ? `⭐ ${rating} (${numberRatings})` : ""}
         </span>
         <p className="course-title">
           {emriProgramit}| {koha}

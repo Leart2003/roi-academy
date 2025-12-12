@@ -1,7 +1,7 @@
 .cards-wrapper {
   display: flex;
   flex-wrap: wrap;
-  gap: 25px;
+  gap: 22px;
   justify-content: flex-start;
   padding: 65px;
 }
@@ -12,11 +12,6 @@
   overflow: hidden;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   transition: 0.25s;
-}
-
-.course-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
 }
 
 .course-img {
@@ -30,12 +25,10 @@
 }
 
 .course-badge {
-  background: #001f3f;
   color: white;
-  margin-left: -11.5rem;
-  padding: 4px 10px;
-  font-size: 8px;
-  border-radius: 6px;
+  font-size: 10px;
+  padding: 4px 4px;
+  border-radius: 7.5px;
 }
 
 .course-rating {
@@ -57,7 +50,7 @@
 
 .course-description {
   margin: 10px 0 20px;
-  font-size: 10px;
+  font-size: 14px;
   color: #5a5a5a;
   line-height: 1.4;
 }
@@ -71,6 +64,7 @@
 .installments {
   font-size: 18px;
   font-weight: 700;
+  padding-left: 15px;
 }
 
 .apply-btn {
@@ -82,8 +76,5 @@
   font-weight: 600;
   border: none;
   cursor: pointer;
-}
-
-.apply-btn:hover {
-  background: #000;
+  margin-right: 5px;
 }
