@@ -1,18 +1,12 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 .future-generation h1 {
   color: white;
 }
 
-.future-generation {
+/* .future-generation {
   background-color: #1e2432;
   color: #ffffff;
   height: 70vh;
-}
+} */
 
 .program-future {
   display: flex;
@@ -46,11 +40,10 @@
   line-height: 1.2;
   margin: 0 0 1rem 0;
   position: relative;
-  width:fit-content;
+  width: fit-content;
   left: 22cap;
   font-weight: 700;
   color: #fff;
- 
 }
 
 .benefits .benefits-lists {
@@ -74,4 +67,3 @@
 .benefits .benefits-lists ul li span {
   display: inline;
 }
-
