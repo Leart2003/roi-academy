@@ -1,6 +1,6 @@
-.program-section {
+.learning-section {
   padding: 60px;
-  background: linear-gradient(to bottom right, #0d1221, #1b2a48);
+  background: linear-gradient(to bottom right, #0d1221, #1b2a48) !important;
   color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -8,7 +8,7 @@
   margin-right: auto;
 }
 
-.program-section h2 {
+.learning-section h2 {
   font-size: 25px;
   margin: 0;
   font-family: Poppins, sans-serif;
@@ -16,7 +16,7 @@
   padding-left: 90px;
 }
 
-.program-section p {
+.learning-section p {
   margin: 0;
   font-family: Poppins, sans-serif;
   color: #ffffff;
@@ -25,7 +25,7 @@
   font-weight: 400;
 }
 
-.program-lists {
+.learning-lists {
   display: flex;
   column-gap: 50px;
   padding-left: 90px;
@@ -36,15 +36,15 @@
   margin-top: 30px;
 }
 
-.program-lists ul {
-  max-width: 500px;
+.learning-lists ul {
+  max-width: 570px;
   list-style: disc;
   padding-left: 20px;
   margin: 0;
   font-weight: 450;
 }
 
-.program-lists ul li {
+.learning-lists ul li {
   margin-bottom: 10px;
   letter-spacing: 1px;
 }
