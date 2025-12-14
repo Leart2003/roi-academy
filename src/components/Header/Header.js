@@ -48,7 +48,9 @@ const Header = () => {
               <Link to="/programet-1-2-mujore">Programet 1–2 mujore</Link>
             </li>
 
-            <li>Future Generations</li>
+            <Link to="/Future-generation">
+              <li>Future Generations</li>
+            </Link>
             <Link to={"/Roi-Kids"}>
               {" "}
               <li>ROI Kids</li>

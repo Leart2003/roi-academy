@@ -9,6 +9,7 @@ import TrainingProgrammingPage from "./Pages/TrainingProgrammingPage"
 import RoiKids from "./Pages/RoiKids"
 import DigitalMarketing from "./Pages/DigitalMarketing"
 import RrethRoi from "./Pages/rrethRoit"
+import FutureGeneration from "./components/FutureGeneration/FutureGeneration"
 
 function App() {
   return (
@@ -26,6 +27,10 @@ function App() {
           />
           <Route path="/Roi-Kids" element={<RoiKids />}></Route>
           <Route path="/Rreth-Roit" element={<RrethRoi />}></Route>
+          <Route
+            path="/Future-generation"
+            element={<FutureGeneration />}
+          ></Route>
         </Routes>
       </Layout>
     </BrowserRouter>
