@@ -3,14 +3,14 @@ import "./ProgramStructure.css";
 
 const ProgramStructure = () => {
   return (
-    <section className="program-section">
+    <section className="learning-section">
       <h2>Struktura e Programit dhe Formati i Mësimit</h2>
       <p>
         Programi zhvillohet për një periudhë prej <strong>6 muajsh</strong>, me
         një kombinim të leksioneve teorike dhe praktikës intensive:
       </p>
 
-      <div className="program-lists">
+      <div className="learning-lists">
         <ul>
           <li>
             Lgjëratat zhvillohen 2 herë në javë nga ora 18:00–20:15, në formatin
