@@ -39,7 +39,10 @@ const Header = () => {
                       Trajnim për Digital Marketing
                     </Link>
                   </span>
-                  <span className="anchor">Trajnim për Siguri Kibernetike</span>
+                  <Link to={"/CyberSecurity"}>
+                     <span className="anchor">Trajnim për Siguri Kibernetike</span>
+                  </Link>
+               
                 </div>
               </li>
             </div>
