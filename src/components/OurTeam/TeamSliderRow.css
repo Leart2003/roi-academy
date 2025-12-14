@@ -1,0 +1,82 @@
+/* Container for stacked rows (if you want spacing between rows, adjust in OurTeam or here) */
+.team-slider-row-wrapper {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 20px; /* space between rows */
+}
+
+/* Each slick "slide" contains a div (team-slide). Make it box-sized and centered */
+.team-slider-row .team-slide {
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center; /* center the card inside the slide */
+  align-items: stretch;
+  height: 100%;
+}
+
+/* Prevent slick from forcing weird sizes */
+.team-slider-row .slick-slide {
+  display: flex !important;
+  align-items: stretch !important;
+  height: auto !important;
+}
+
+/* TeamCard should have a max width so it doesn't grow infinitely */
+.team-card {
+  width: 100%;
+  max-width: 280px; /* adjust as needed */
+  box-sizing: border-box;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding: 24px 12px;
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+/* image behavior inside card */
+.team-card img.team-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* Adjust the inner text to take remaining space */
+.team-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0; /* helps prevent overflow with long names */
+}
+
+.team-text .name {
+  font-size: 18px;
+  color: #0f172a;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.team-text .role {
+  font-size: 14px;
+  color: #64748b;
+  text-align: start;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Optional: reduce gap on smaller screens */
+@media (max-width: 768px) {
+  .team-card {
+    max-width: 220px;
+    padding: 16px 10px;
+  }
+  .team-card img.team-img {
+    width: 80px;
+    height: 80px;
+  }
+}

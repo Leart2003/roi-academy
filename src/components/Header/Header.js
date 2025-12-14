@@ -1,36 +1,75 @@
-import React from "react";
-import "./Header.css";
+import React from "react"
+import "./Header.css"
+import { Link, useNavigate } from "react-router-dom"
 
 const Header = () => {
+  const navigate = useNavigate()
+
+  const handleApplyClick = () => {
+    navigate("/application")
+  }
+
   return (
     <header className="header">
       <div className="header__left">
-        <img
-          src="assets/images/roi-academy-logo-e1750817553650.png"
-          alt="ROI Academy logo"
-          className="logo"
-        />
+        <Link to={"/"}>
+          <img
+            src="assets/images/roi-academy-logo-e1750817553650.png"
+            alt="ROI Academy logo"
+            className="logo"
+          />
+        </Link>
       </div>
 
       <div className="header__center">
         <nav className="header__nav">
           <ul className="nav-top">
-            <li>Programet 6–12 mujore ▾</li>
-            <li>Programet 1–2 mujore</li>
+            <div className="dropdown">
+              <li>
+                <Link to={"/Programet-6-mujore"} className="active">
+                  Programet 6–12 mujore ▾
+                </Link>
+                <div className="dropdown-content">
+                  <span className="anchor">Të gjitha programet</span>
+                  <Link to="/training-programming" className="anchor">
+                    Trajnim për programim
+                  </Link>
+                  <span className="anchor">
+                    <Link to="/digital-marketing" className="active">
+                      Trajnim për Digital Marketing
+                    </Link>
+                  </span>
+                  <span className="anchor">Trajnim për Siguri Kibernetike</span>
+                </div>
+              </li>
+            </div>
+
+            <li className="active">
+              <Link to="/programet-1-2-mujore">Programet 1–2 mujore</Link>
+            </li>
+
             <li>Future Generations</li>
-            <li>ROI Kids</li>
+            <Link to={"/Roi-Kids"}>
+              {" "}
+              <li>ROI Kids</li>
+            </Link>
           </ul>
+
           <ul className="nav-bottom">
-            <li>Rreth ROI Academy</li>
+            <Link to={"/Rreth-Roit"}>
+              <li>Rreth ROI Academy</li>
+            </Link>
           </ul>
         </nav>
       </div>
 
       <div className="header__right">
-        <button className="apply-btn">Apply Now</button>
+        <button className="apply-bttn" onClick={handleApplyClick}>
+          Apply Now
+        </button>
       </div>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

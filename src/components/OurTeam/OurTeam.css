@@ -1,0 +1,15 @@
+.ot-container {
+  color: #fff;
+  height: auto;
+  background-color: #1e2332;
+  padding: 50px 100px;
+}
+
+.ot-head-container h2 {
+  font-size: 37.5px;
+  margin: 0;
+}
+
+.ot-head-container p {
+  font-size: 16px;
+}

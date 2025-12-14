@@ -1,8 +1,9 @@
-const programet = [
+const programet6mujore = [
   {
     id: 1,
-    imageUrl: "assets/images/PROGRAMIM-2-1536x864.png",
+    imageUrl: "/assets/images/PROGRAMIM-2-1536x864.png",
     emriProgramit: "Programim",
+    backgroundColor: "#1e2432",
     koha: "6 muaj",
     description:
       "Gjatë këtij programi të specializuar 6-mujor, do të mësoni teknologjitë më të kërkuara në zhvillimin e aplikacioneve web dhe softuerike.",
@@ -13,8 +14,9 @@ const programet = [
   },
   {
     id: 2,
-    imageUrl: "assets/images/DIGITAL-MARKETING-1536x864.png",
+    imageUrl: "/assets/images/DIGITAL-MARKETING-1536x864.png",
     emriProgramit: "Digital Marketing",
+    backgroundColor: "#d93d66",
     koha: "6 muaj",
     description:
       "Ky trajnim është i përsosur për ata që dëshirojnë të ndërtojnë një karrierë të ose të avancojnë në profesionin e tyre aktual.",
@@ -25,8 +27,9 @@ const programet = [
   },
   {
     id: 3,
-    imageUrl: "assets/images/CYBER-SECURITY-2-1536x864.png",
+    imageUrl: "/assets/images/CYBER-SECURITY-2-1536x864.png",
     emriProgramit: "Cyber Security",
+    backgroundColor: "#4054b2",
     koha: "6 muaj",
     description:
       "Programi përfshin module të avancuara që mbulojnë të gjitha aspektet kryesore të sigurisë kibernetike.",
@@ -37,8 +40,9 @@ const programet = [
   },
   {
     id: 4,
-    imageUrl: "assets/images/DESIGN-VIDEO-1536x864.png",
+    imageUrl: "/assets/images/DESIGN-VIDEO-1536x864.png",
     emriProgramit: "Design & Video",
+    backgroundColor: "rgb(244,115,44)",
     koha: "6 muaj",
     description:
       "Gjatë këtij programi të specializuar 6-mujor, do të mësoni dizajn grafik, video editim & animacion.",
@@ -49,8 +53,9 @@ const programet = [
   },
   {
     id: 5,
-    imageUrl: "assets/images/FutureGeneartions-1536x864.png",
+    imageUrl: "/assets/images/FutureGeneartions-1536x864.png",
     emriProgramit: "FutureGenerations",
+    backgroundColor: "rgb(111,33,124)",
     koha: "1 - 3 vite",
     description:
       "Future Generations është një program edukimi 3-vjeçar i ndërtuar për të rinjtë e moshës 14 deri në 19 vjeç",
@@ -61,8 +66,9 @@ const programet = [
   },
   {
     id: 6,
-    imageUrl: "assets/images/ROI-Kids-1536x864.png",
+    imageUrl: "/assets/images/ROI-Kids-1536x864.png",
     emriProgramit: "Roi Kids",
+    backgroundColor: "rgb(110,193,228)",
     koha: "6 - 12 muaj",
     description:
       "ROI Kids është akademi e specializuar në zhvillimin e aftësive teknologjike për fëmijët e moshës 7 deri në 15 vjeç",
@@ -72,3 +78,5 @@ const programet = [
     pagesa: "1-12 këste",
   },
 ]
+
+export default programet6mujore

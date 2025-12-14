@@ -1,0 +1,108 @@
+const programsData = [
+  {
+    id: 1,
+    title: "Social Media",
+    methodology: "Trajnim dhe Praktikë",
+    installments: "3 Këste",
+    badgeColor: "#4054B2",
+    bullets: [
+      "1-2 muaj Trajnim",
+      "1-2 muaj Praktikë",
+      "Certifikatë për Përfundim",
+      "Referencë pune",
+    ],
+  },
+  {
+    id: 2,
+    title: "Full Stack",
+    methodology: "Trajnim dhe Praktikë",
+    installments: "3 Këste",
+    badgeColor: "#23A455",
+    bullets: [
+      "1-2 muaj Trajnim",
+      "1-2 muaj Praktikë",
+      "Certifikatë për Përfundim",
+      "Referencë pune",
+    ],
+  },
+  {
+    id: 3,
+    title: "Dizajn Grafik",
+    methodology: "Trajnim dhe Praktikë",
+    installments: "3 Këste",
+    badgeColor: "#6EC1E4",
+    bullets: [
+      "1-2 muaj Trajnim",
+      "1-2 muaj Praktikë",
+      "Certifikatë për Përfundim",
+      "Referencë pune",
+    ],
+  },
+  {
+    id: 4,
+    title: "Python",
+    methodology: "Trajnim dhe Praktikë",
+    installments: "3 Këste",
+    badgeColor: "#D93D66",
+    bullets: [
+      "1-2 muaj Trajnim",
+      "1-2 muaj Praktikë",
+      "Certifikatë për Përfundim",
+      "Referencë pune",
+    ],
+  },
+  {
+    id: 5,
+    title: "Java",
+    methodology: "Trajnim dhe Praktikë",
+    installments: "3 Këste",
+    badgeColor: "#D93D66",
+    bullets: [
+      "1-2 muaj Trajnim",
+      "1-2 muaj Praktikë",
+      "Certifikatë për Përfundim",
+      "Referencë pune",
+    ],
+  },
+  {
+    id: 6,
+    title: "Video Editing",
+    methodology: "Trajnim dhe Praktikë",
+    installments: "3 Këste",
+    badgeColor: "#4054B2",
+    bullets: [
+      "1-2 muaj Trajnim",
+      "1-2 muaj Praktikë",
+      "Certifikatë për Përfundim",
+      "Referencë pune",
+    ],
+  },
+  {
+    id: 7,
+    title: "UI/UX",
+    methodology: "Trajnim dhe Praktikë",
+    installments: "3 Këste",
+    badgeColor: "#23A455",
+    bullets: [
+      "1-2 muaj Trajnim",
+      "1-2 muaj Praktikë",
+      "Certifikatë për Përfundim",
+      "Referencë pune",
+    ],
+  },
+  {
+    id: 8,
+    title: "Burime Njerëzore",
+    methodology: "Trajnim dhe Praktikë",
+    installments: "4 Këste",
+    badgeColor: "#6EC1E4",
+    bullets: [
+      "1-2 muaj Trajnim",
+      "1-2 muaj Praktikë",
+      "Certifikatë për Përfundim",
+      "Referencë pune",
+    ],
+  },
+];
+
+export default programsData;

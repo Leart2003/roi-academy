@@ -1,0 +1,45 @@
+.why-container {
+  display: flex;
+  padding: 80px 120px;
+  gap: 40px;
+  position: relative;
+  margin-top: 80px;
+}
+
+.why-text {
+  width: 350px;
+  margin-top: 0;
+}
+
+.why-text h2 {
+  font-size: 25px;
+  line-height: 1.2;
+  margin-bottom: 8px;
+  color: #1e2432;
+  font-family: Poppins, sans-serif;
+}
+
+.why-text p {
+  font-size: 16px;
+  line-height: 1.2;
+  margin-bottom: 6px;
+  color: #7a7a7a;
+  font-family: Poppins, sans-serif;
+  font-weight: 545;
+}
+
+.why-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 55%; 
+  overflow: hidden;
+}
+
+.why-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: right; 
+}
