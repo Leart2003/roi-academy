@@ -7,6 +7,7 @@ import OurTeam from "../components/OurTeam/OurTeam";
 import StudentFeedback from "../components/StudentFeedback/StudentFeedback";
 import StatCard from "../components/StatCard/StatCard";
 import CyberSecurity from "../components/CyberSecurity/CyberSecurity";
+import AboutRoi from "../components/AboutRoi/aboutroi";
 
 function HomePage() {
   return (
@@ -14,6 +15,7 @@ function HomePage() {
       <Loginform />
       <MonthlyProgram />
       <ProgramsSection />
+      <AboutRoi />
       <StudentFeedback />
       <OurTeam />
       <Blog />
