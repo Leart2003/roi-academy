@@ -33,3 +33,50 @@
   margin: 0;
   font-weight: 500;
 }
+
+
+/* Responsive Styles */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .cert-practice {
+    gap: 20px;
+  }
+
+  .cert-item h2 {
+    font-size: 22px;
+  }
+
+  .box {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .box p {
+    font-size: 14px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .cert-item {
+    width: 100%;
+  }
+
+  .cert-practice {
+    padding: 30px 20px;
+    gap: 15px;
+  }
+
+  .cert-item h2 {
+    font-size: 20px;
+  }
+
+  .box {
+    padding: 15px;
+  }
+
+  .box p {
+    font-size: 13px;
+  }
+}
