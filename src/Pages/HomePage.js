@@ -5,6 +5,7 @@ import ProgramsSection from "../components/Programs/ProgramsSection";
 import MonthlyProgram from "../components/MonthlyProgram/MonthlyProgram";
 import OurTeam from "../components/OurTeam/OurTeam";
 import StudentFeedback from "../components/StudentFeedback/StudentFeedback";
+import StatCard from "../components/StatCard/StatCard";
 
 function HomePage() {
   return (
@@ -16,6 +17,7 @@ function HomePage() {
       <OurTeam />
       <Blog />
       <ImageSlider />
+      <StatCard/>
     </div>
   );
 }
