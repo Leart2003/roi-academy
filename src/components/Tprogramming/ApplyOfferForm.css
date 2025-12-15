@@ -88,3 +88,64 @@
 .appForm-submit:hover {
   background-color: #4054b2;
 }
+
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .appForm-box {
+    padding: 30px;
+  }
+
+  .appForm-title {
+    font-size: 28px;
+  }
+
+  .appForm-subtitle {
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+
+  .appForm-field input,
+  .appForm-field textarea {
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .appForm-box {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .appForm-title {
+    font-size: 24px;
+  }
+
+  .appForm-subtitle {
+    font-size: 14px;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  .appForm-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .appForm-field input,
+  .appForm-field textarea {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .appForm-field textarea {
+    height: 100px;
+  }
+
+  .appForm-submit {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
