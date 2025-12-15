@@ -20,6 +20,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/programet-1-2-mujore" element={<Programs12Page />} />
           <Route path="/digital-marketing" element={<DigitalMarketing />} />
+          <Route path="/CyberSecurity" element={<CyberSecurity />} />
           <Route path="/application" element={<ApplicationForm />} />
           <Route path="/Programet-6-mujore" element={<Programs6 />}></Route>
           <Route
@@ -32,8 +33,6 @@ function App() {
             path="/Future-generation"
             element={<FutureGeneration />}
           ></Route>
-
-          <Route path="/CyberSecurity" element={<CyberSecurity />} />
         </Routes>
       </Layout>
     </BrowserRouter>
