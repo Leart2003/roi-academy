@@ -124,3 +124,64 @@
 .roww .fieldd input {
   margin-right: 12px;
 }
+
+/* Responsive Styles */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .program-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .dessc {
+    max-width: 100%;
+  }
+
+  .program-formm {
+    width: 350px;
+    height: auto;
+    padding: 25px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .program-container {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .tittle,
+  .subttitle {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .dessc {
+    font-size: 14px;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .apply-btnn {
+    padding: 12px 25px;
+    font-size: 14px;
+  }
+
+  .program-formm {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .roww {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .roww .fieldd input {
+    margin-right: 0;
+  }
+}

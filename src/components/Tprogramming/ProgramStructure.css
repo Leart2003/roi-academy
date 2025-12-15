@@ -48,3 +48,63 @@
   margin-bottom: 10px;
   letter-spacing: 1px;
 }
+
+
+/* Responsive Styles */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .learning-section h2,
+  .learning-section p,
+  .learning-lists {
+    padding-left: 40px;
+  }
+
+  .learning-section h2 {
+    font-size: 22px;
+  }
+
+  .learning-section p,
+  .learning-lists {
+    font-size: 15px;
+  }
+
+  .learning-lists {
+    column-gap: 30px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .learning-section h2,
+  .learning-section p,
+  .learning-lists {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+  }
+
+  .learning-section h2 {
+    font-size: 20px;
+  }
+
+  .learning-section p {
+    font-size: 14px;
+  }
+
+  .learning-lists {
+    flex-direction: column;
+    column-gap: 0;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .learning-lists ul {
+    max-width: 100%;
+    padding-left: 20px;
+  }
+
+  .learning-lists ul li {
+    font-size: 14px;
+  }
+}

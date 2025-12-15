@@ -43,3 +43,52 @@
 .text-block p:last-of-type {
   margin-top: 20px;
 }
+
+
+
+/* Responsive Styles */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .success-text {
+    padding: 40px;
+  }
+
+  .text-block {
+    padding-left: 30px;
+    margin-top: 50px;
+  }
+
+  .text-block h2 {
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
+
+  .text-block p {
+    font-size: 15px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .success-text {
+    flex-direction: column;
+    padding: 30px 20px;
+    height: auto;
+    align-items: flex-start;
+  }
+
+  .text-block {
+    padding-left: 0;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .text-block h2 {
+    font-size: 20px;
+  }
+
+  .text-block p {
+    font-size: 14px;
+  }
+}
