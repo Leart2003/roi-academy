@@ -1,0 +1,63 @@
+.learning-formats {
+  width: 100%;
+  padding: 40px 0;
+}
+
+.learning-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.learning-text {
+  flex: 0.6;
+}
+
+.learning-text h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1e2432;
+  margin-bottom: 20px;
+}
+
+.learning-text p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #7a7a7a;
+  margin-bottom: 18px;
+}
+
+.learning-images-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.learning-images {
+  width: 80%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.learning-images2 {
+  width: 80%;
+  height: 350px;
+}
+
+.learning-container--reverse {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 992px) {
+  .learning-container,
+  .learning-container--reverse {
+    flex-direction: column;
+    align-items: center;
+  }
+}

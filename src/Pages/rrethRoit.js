@@ -4,6 +4,7 @@ import StudentFeedback from "../components/StudentFeedback/StudentFeedback"
 import StatsSection from "./StatsSection"
 import RoiHero from "../components/Roi-hero/roiHero"
 import RrethNesh from "../components/RrethNesh/rrethNesh"
+import Formati from "../components/Formati/Formati"
 
 const RrethRoi = () => {
   return (
@@ -11,7 +12,41 @@ const RrethRoi = () => {
       <RoiHero title={"Rreth ROI Academy"} />
       <StatsSection />
       <RrethNesh />
-      {/* Missing component */}
+      <Formati
+        title={"Formati i Mësimit – Online, Fizikisht dhe Sistem Hibrid"}
+        text={`Që nga viti 2019, mbi 6,000 studentë kanë përfunduar me sukses trajnimet tona dhe një pjesë e madhe e tyre janë të punësuar në kompani prestigjioze ose kanë nisur rrugën e tyre të pavarur profesionale.
+
+Kjo dëshmon jo vetëm cilësinë e programeve tona, por edhe ndikimin e tyre real në zhvillimin e karrierës së pjesëmarrësve tanë.
+
+Falë metodave moderne të mësimdhënies dhe përvojës së pasur të trajnerëve tanë, studentët pajisen me aftësitë më të kërkuara në tregun e punës. Ata janë të përgatitur të punojnë në kompani të ndryshme, të krijojnë projekte të suksesshme ose të fillojnë bizneset e tyre personale.
+
+Me një staf të përkushtuar prej 22 trajnerësh me përvojë të gjatë në fushat përkatëse, ROI Academy ofron një mjedis të përshtatshëm për rritje dhe zhvillim profesional.
+
+Përveç kësaj, ne kemi krijuar bashkëpunime të shumta me kompani dhe institucione, duke mundësuar angazhimin e studentëve tanë në projekte reale gjatë dhe pas përfundimit të trajnimit. Ky rrjet partneritetesh e bën më të lehtë tranzicionin e studentëve në një karrierë aktive dhe të suksesshme.
+
+Kjo është arsyeja pse një numër i madh i studentëve tanë sigurojnë punësim brenda pak muajsh nga përfundimi i programit të tyre.`}
+        bgColor={"#fafafa"}
+        radius={"18px 18px 0 0"}
+        radius2={"0 0 18px 18px"}
+      />
+      <Formati
+        title={"Rezultatet dhe Suksesi i Pjesëmarrësve"}
+        text={`Që nga viti 2019, mbi 6,000 studentë kanë përfunduar me sukses trajnimet tona dhe një pjesë e madhe e tyre janë të punësuar në kompani prestigjioze ose kanë nisur rrugën e tyre të pavarur profesionale.
+
+Kjo dëshmon jo vetëm cilësinë e programeve tona, por edhe ndikimin e tyre real në zhvillimin e karrierës së pjesëmarrësve tanë.
+
+Falë metodave moderne të mësimdhënies dhe përvojës së pasur të trajnerëve tanë, studentët pajisen me aftësitë më të kërkuara në tregun e punës. Ata janë të përgatitur të punojnë në kompani të ndryshme, të krijojnë projekte të suksesshme ose të fillojnë bizneset e tyre personale.
+
+Me një staf të përkushtuar prej 22 trajnerësh me përvojë të gjatë në fushat përkatëse, ROI Academy ofron një mjedis të përshtatshëm për rritje dhe zhvillim profesional.
+
+Përveç kësaj, ne kemi krijuar bashkëpunime të shumta me kompani dhe institucione, duke mundësuar angazhimin e studentëve tanë në projekte reale gjatë dhe pas përfundimit të trajnimit. Ky rrjet partneritetesh e bën më të lehtë tranzicionin e studentëve në një karrierë aktive dhe të suksesshme.
+
+Kjo është arsyeja pse një numër i madh i studentëve tanë sigurojnë punësim brenda pak muajsh nga përfundimi i programit të tyre.`}
+        reverse={true}
+        bgColor={"#ffffff"}
+        radius={"18px 18px 0 0"}
+        radius2={"0 0 18px 18px"}
+      />
       <StudentFeedback />
       <OurTeam />
       <ImageSlider />
