@@ -5,10 +5,15 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import { far } from "@fortawesome/free-regular-svg-icons";
 import { fab } from "@fortawesome/free-brands-svg-icons";
+import { useNavigate } from "react-router";
 
 library.add(fas, far, fab);
 
 const AboutRoi = () => {
+  const navigate = useNavigate()
+  const handleApplyClick = () => {
+    navigate("/Rreth-Roit")
+  }
   return (
     <div className="about-roi-container">
       <img src="./assets/images/Roi-photo.png" alt="Roi-logo" />
@@ -47,7 +52,7 @@ const AboutRoi = () => {
             Konsulence të vazhdueshme falas
           </span>
 
-          <button className="about-roi-btn">Më shumë rreth nesh</button>
+          <button className="about-roi-btn" onClick={handleApplyClick}>Më shumë rreth nesh</button>
         </div>
       </div>
     </div>

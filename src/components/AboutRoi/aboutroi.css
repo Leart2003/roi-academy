@@ -52,7 +52,10 @@
   border: none;
   cursor: pointer;
 }
-
+.about-roi-btn:hover{
+  background-color: #1e2432;
+  color: #FFFFFF;
+}
 /* mobile responsive */
 
 /* ======================
