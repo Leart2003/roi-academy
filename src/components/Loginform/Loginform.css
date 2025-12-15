@@ -1,7 +1,6 @@
 body {
-  background: #f5f5f5; 
+  background: #f5f5f5;
 }
-
 
 .app-wrapper {
   display: flex;
@@ -13,7 +12,6 @@ body {
   background-color: #f5f5f5;
 }
 
-
 .hero-text {
   flex: 1;
   max-width: 600px;
@@ -23,7 +21,7 @@ body {
 .hero-text h1 {
   font-size: 45px;
   line-height: 1.2;
-  color: #1E2432;
+  color: #1e2432;
   margin-bottom: 20px;
   font-family: Poppins, sans-serif;
   font-weight: 400;
@@ -35,18 +33,17 @@ body {
 
 .hero-text p {
   font-size: 16px;
-  color: #1E2432;
+  color: #1e2432;
   margin-bottom: 30px;
   width: 600px;
   line-height: 1.5;
   font-family: Poppins, sans-serif;
 }
 
-
 .hero-button {
   padding: 15px 70px !important;
-  background-color: #1E2432;
-  color: #FFFFFF;
+  background-color: #1e2432;
+  color: #ffffff;
   border: none;
   border-radius: 10px;
   font-weight: 600;
@@ -56,11 +53,10 @@ body {
 }
 
 .hero-button:hover {
-  border: 2px solid #1E2432;
-  color: #1E2432;
-  background-color: #FFFFFF ;
+  border: 2px solid #1e2432;
+  color: #1e2432;
+  background-color: #ffffff;
 }
-
 
 .registration-form {
   flex: 1;
@@ -93,7 +89,7 @@ body {
 
 .input-group label {
   font-size: 14px;
-  color: #5A5A5A;
+  color: #5a5a5a;
   margin-bottom: 6px;
   font-family: Latto, sans-serif;
 }
@@ -105,7 +101,7 @@ body {
   border-radius: 14px;
   border: 1px solid #ddd;
   font-size: 14px;
-  background: #FFFFFF;
+  background: #ffffff;
   outline: none;
 }
 
@@ -126,13 +122,40 @@ body {
   border-color: #b0b0b0;
 }
 
-
 .form-submit-button {
   width: 100%;
   height: 48px;
   margin-top: 10px;
+  /* height: 5vh; */
+}
+
+.container h1 {
+  color: #1e2a3a;
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-size: 40px;
+  text-align: left;
+  max-width: 500px;
+}
+
+.container span {
+  color: #1e2a3a;
+  font-weight: bold;
+}
+
+.container p {
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+  text-align: left;
+  max-width: 500px;
+}
+
+.apply-button {
+  border: 1px solid white;
+  background-color: #1e2432;
   color: #ffffff;
-  background-color: #1E2432;
+  background-color: #1e2432;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -145,7 +168,6 @@ body {
 .form-submit-button:hover {
   background-color: #4a5ba8;
 }
-
 
 /* --- Tablet --- */
 @media (max-width: 1024px) {
@@ -205,5 +227,3 @@ body {
     padding: 20px 20px;
   }
 }
-
-

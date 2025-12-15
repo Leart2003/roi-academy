@@ -7,11 +7,13 @@ import OurTeam from "../components/OurTeam/OurTeam";
 import StudentFeedback from "../components/StudentFeedback/StudentFeedback";
 import StatCard from "../components/StatCard/StatCard";
 import AboutRoi from "../components/AboutRoi/aboutroi";
+import StatsSection from "./StatsSection";
 
 function HomePage() {
   return (
     <div>
       <Loginform />
+      <StatsSection isDark={true} />
       <MonthlyProgram />
       <ProgramsSection />
       <AboutRoi />
@@ -19,8 +21,6 @@ function HomePage() {
       <OurTeam />
       <Blog />
       <ImageSlider />
-      <StatCard/>
-
     </div>
   );
 }

@@ -1,7 +1,7 @@
-import './StatCard.css';
-const StatCard = () => {
+import "./StatCard.css";
+const StatCard = (isDark) => {
   return (
-    <div className="stats">
+    <div className="stats-card">
       {data.map((it, idx) => (
         <div key={idx} className="stat">
           <span className="value">{it.value}</span>
@@ -14,23 +14,11 @@ const StatCard = () => {
 
 // Përdorimi
 const data = [
-  { value: '+6000', label: 'Studente të trajnuar' },
-  { value: '95%', label: 'Studente të përshkunuar' },
-  { value: '42', label: 'Trajnime të përmendur' },
-  { value: '6', label: 'Vite nga themelimi' },
-  { value: '3', label: 'Shtete me prezencë fizike' }
+  { value: "+6000", label: "Studente të trajnuar" },
+  { value: "95%", label: "Studente të përshkunuar" },
+  { value: "42", label: "Trajnime të përmendur" },
+  { value: "6", label: "Vite nga themelimi" },
+  { value: "3", label: "Shtete me prezencë fizike" },
 ];
 
-
-
-
-
-
-
-export default  StatCard;
-
-
- 
-
-
-
+export default StatCard;

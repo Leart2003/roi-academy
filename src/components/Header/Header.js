@@ -1,13 +1,13 @@
-import React from "react"
-import "./Header.css"
-import { Link, useNavigate } from "react-router-dom"
+import React from "react";
+import "./Header.css";
+import { Link, useNavigate } from "react-router-dom";
 
 const Header = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const handleApplyClick = () => {
-    navigate("/application")
-  }
+    navigate("/application");
+  };
 
   return (
     <header className="header">
@@ -27,7 +27,7 @@ const Header = () => {
             <div className="dropdown">
               <li>
                 <Link to={"/Programet-6-mujore"} className="active">
-                  Programet 6–12 mujore ▾
+                  Programet 6-12 mujore ▾
                 </Link>
                 <div className="dropdown-content">
                   <span className="anchor">Të gjitha programet</span>
@@ -55,12 +55,8 @@ const Header = () => {
               <li>Future Generations</li>
             </Link>
             <Link to={"/Roi-Kids"}>
-              {" "}
               <li>ROI Kids</li>
             </Link>
-          </ul>
-
-          <ul className="nav-bottom">
             <Link to={"/Rreth-Roit"}>
               <li>Rreth ROI Academy</li>
             </Link>
