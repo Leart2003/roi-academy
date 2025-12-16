@@ -12,7 +12,6 @@ const Header = () => {
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
   const toggleMobileMenu = () => {
-    console.log("Clicked", isMobileMenuOpen);
     setIsMobileMenuOpen(!isMobileMenuOpen);
   }
 
