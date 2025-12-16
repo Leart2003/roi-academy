@@ -4,6 +4,11 @@
   flex-direction: column;
 }
 
+.programs-grid {
+  width: 95%;
+  margin: 0 auto;
+}
+
 .hero-section {
   background: #1e2432;
   color: #ffffff;
