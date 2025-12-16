@@ -35,19 +35,16 @@
   padding-top: 2px;
 }
 
-.header__nav {
-  display: flex;
-  align-items: center;
+.nav-bottom {
+  margin-top: 5px;
 }
 
 .header__nav ul {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
-}
-
-.nav-bottom {
-  margin-top: 5px;
 }
 
 .header__nav li {
@@ -58,6 +55,14 @@
   font-family: Poppins, sans-serif;
   font-size: 14px;
   padding: 0px 20px;
+  border-bottom: 3px solid transparent;
+}
+
+.mobile-icon {
+  display: none;
+  font-size: 28px;
+  color: #1e2432;
+  cursor: pointer;
 }
 
 .header__nav li:hover {
@@ -66,7 +71,7 @@
 }
 
 .header__right {
-  width: 10%;
+  width: 13%;
   display: flex;
   justify-content: center;
   margin-right: 110px;
@@ -75,10 +80,10 @@
 .apply-bttn {
   background-color: #1e2432;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 14px;
   font-family: Poppins, sans-serif;
   border: none;
-  padding: 17.5px 42.1px;
+  padding: 17.5px 40px;
   border-radius: 8px;
   font-weight: 500;
   cursor: pointer;
@@ -165,4 +170,65 @@
 .dropdown:hover .dropbtn {
   text-decoration: underline;
   color: #4a5ba8;
+}
+
+.apply-btn-mobile {
+  display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+  .header {
+    /* flex-direction: column; */
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .header__left,
+  .header__center,
+  .header__right {
+    /* width: 100%; */
+    margin: 5px 0;
+    justify-content: center;
+  }
+
+  .header__nav ul {
+    flex-direction: column;
+    align-items: self-end;
+    width: 40%;
+    position: absolute;
+    background-color: #fff;
+    top: -800px;
+    right: 0px;
+    transition: left 0.3s ease-in-out;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .header__nav ul.active {
+    top: 85px;
+    position: absolute;
+    height: auto;
+    padding-bottom: 10px;
+  }
+
+  .header__right {
+    display: none;
+  }
+
+  .header__nav li {
+    padding: 10px 30px;
+    /* width: 100%; */
+    font-size: 16px;
+  }
+
+  .apply-bttn {
+    padding: 12px 30px;
+    font-size: 12px;
+    display: block;
+  }
+
+  .mobile-icon {
+    display: block;
+  }
+  
 }
