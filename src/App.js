@@ -24,7 +24,7 @@ function App() {
           <Route path="/digital-marketing" element={<DigitalMarketing />} />
           <Route path="/CyberSecurity" element={<CyberSecurity />} />
           <Route path="/application" element={<ApplicationForm />} />
-          <Route path="/Programet-6-mujore" element={<Programs6 />}></Route>
+          <Route path="/programet-6-mujore" element={<Programs6 />}></Route>
           <Route
             path="/training-programming"
             element={<TrainingProgrammingPage />}

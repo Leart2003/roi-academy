@@ -8,13 +8,17 @@
   background: #1e2432;
   color: #ffffff;
   padding: 90px 120px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .hero-section h1 {
   font-size: 37px;
   font-family: Poppins, sans-serif;
   font-weight: 700;
-  width: 550px;
+  /* width: 550px; */
   line-height: 1.2;
   margin-bottom: auto;
 }

@@ -2,6 +2,7 @@ import React from "react";
 import "./DigitalMarketingPrograming.css";
 import { useNavigate } from "react-router-dom";
 
+import ApplicationForm from "../ApplicationForm/ApplicationForm";
 const DigitalMarketingPrograming = () => {
   const navigate = useNavigate();
 
@@ -9,7 +10,7 @@ const DigitalMarketingPrograming = () => {
     navigate("/application");
   };
   return (
-    <section className="program-sectioni">
+    <section className="digital-marketing-program-section">
       <div className="program-containeri">
         <div className="program-lefti">
           <h1 className="tittlei">DIGITAL MARKETING</h1>
@@ -24,37 +25,7 @@ const DigitalMarketingPrograming = () => {
             Apply Now <i className="fa-solid fa-arrow-right"></i>
           </button>
         </div>
-
-        <form className="program-formmi">
-          <div className="roww">
-            <div className="fielddi">
-              <label>Emër</label>
-              <input type="text" />
-            </div>
-
-            <div className="fielddi">
-              <label>Mbiemër</label>
-              <input type="text" />
-            </div>
-          </div>
-
-          <div className="fielddi">
-            <label>Numri telefonit</label>
-            <input type="text" />
-          </div>
-
-          <div className="fielddi">
-            <label>Email</label>
-            <input type="email" />
-          </div>
-
-          <div className="fielddi">
-            <label>Message</label>
-            <textarea rows="4"></textarea>
-          </div>
-
-          <button className="submit-btnn">SUBMIT APLICATION</button>
-        </form>
+        <ApplicationForm hideInterestedInput={true} isDark={true} />
       </div>
     </section>
   );

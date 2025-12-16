@@ -1,5 +1,6 @@
-.program-sectioni {
-  height: 464px;
+.digital-marketing-program-section {
+  height: 564px;
+  background-color: red;
   background: #1e2432;
   padding: 50px 100px;
   display: flex;
@@ -11,7 +12,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  height: auto;
+  height: 100%;
   color: #ffffff;
   gap: 20;
 }

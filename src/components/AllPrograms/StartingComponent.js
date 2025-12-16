@@ -1,6 +1,7 @@
 import React from "react";
 import "./StartingComponent.css";
 import { useNavigate } from "react-router-dom";
+import ApplicationForm from "../ApplicationForm/ApplicationForm";
 
 const StartingComponent = () => {
   const navigate = useNavigate();
@@ -18,37 +19,7 @@ const StartingComponent = () => {
             Apply Now <i className="fa-solid fa-arrow-right"></i>
           </button>
         </div>
-
-        <form className="program-formmi-s">
-          <div className="roww-s">
-            <div className="fielddi-s">
-              <label>Emër</label>
-              <input type="text" />
-            </div>
-
-            <div className="fielddi-s">
-              <label>Mbiemër</label>
-              <input type="text" />
-            </div>
-          </div>
-
-          <div className="fielddi-s">
-            <label>Numri telefonit</label>
-            <input type="text" />
-          </div>
-
-          <div className="fielddi-s">
-            <label>Email</label>
-            <input type="email" />
-          </div>
-
-          <div className="fielddi-s">
-            <label>Message</label>
-            <textarea rows="4"></textarea>
-          </div>
-
-          <button className="submit-btnn-s">SUBMIT APLICATION</button>
-        </form>
+        <ApplicationForm isDark={true} />
       </div>
     </section>
   );

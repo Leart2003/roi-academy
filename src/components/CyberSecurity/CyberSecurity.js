@@ -1,12 +1,11 @@
 import "./CyberSecurity.css";
-import Loginform from "../Loginform/Loginform";
-import StatCard from "../StatCard/StatCard";
 import SectionOfProgram from "../SectionOfProgram/SectionOfProgram";
 import SecuredTraining from "../SecuredTraining/SecuredTraining";
 import StudentFeedback from "../StudentFeedback/StudentFeedback";
 import OurTeam from "../OurTeam/OurTeam";
 import { useNavigate } from "react-router";
 import ApplyOfferForm from "../DigitalMarketing/ApplyOfferForm";
+import ApplicationForm from "../ApplicationForm/ApplicationForm";
 
 const CyberSecurity = () => {
   const title = "Pse të zgjedhni programin 6-mujor për Siguri Kibernetike?";
@@ -38,37 +37,7 @@ const CyberSecurity = () => {
               Apply Now <i className="fa-solid fa-arrow-right"></i>
             </button>
           </div>
-
-          <form className="program-formmi">
-            <div className="roww">
-              <div className="fielddi">
-                <label>Emër</label>
-                <input type="text" />
-              </div>
-
-              <div className="fielddi">
-                <label>Mbiemër</label>
-                <input type="text" />
-              </div>
-            </div>
-
-            <div className="fielddi">
-              <label>Numri telefonit</label>
-              <input type="text" />
-            </div>
-
-            <div className="fielddi">
-              <label>Email</label>
-              <input type="email" />
-            </div>
-
-            <div className="fielddi">
-              <label>Message</label>
-              <textarea rows="4"></textarea>
-            </div>
-
-            <button className="submit-btnn">SUBMIT APLICATION</button>
-          </form>
+          <ApplicationForm isDark={true} hideInterestedInput={true} />
         </div>
       </section>
       <SectionOfProgram />
