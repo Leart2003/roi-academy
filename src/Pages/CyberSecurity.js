@@ -1,12 +1,9 @@
 import "./CyberSecurity.css";
-import Loginform from "../Loginform/Loginform";
 import StatCard from "../StatCard/StatCard";
 import SectionOfProgram from "../SectionOfProgram/SectionOfProgram";
 import SecuredTraining from "../SecuredTraining/SecuredTraining";
 import StudentFeedback from "../StudentFeedback/StudentFeedback";
 import OurTeam from "../OurTeam/OurTeam";
-import { useNavigate } from "react-router";
-import ApplyOfferForm from "../DigitalMarketing/ApplyOfferForm";
 
 const CyberSecurity = () => {
   const title = "Pse të zgjedhni programin 6-mujor për Siguri Kibernetike?";
@@ -17,60 +14,9 @@ const CyberSecurity = () => {
     "Përveç mësimit të thelluar, ofrohet praktikë në firmat partnere dhe një portofol të gjerë për të nxitur hyrjen në treg.",
   ];
 
-  const navigate = useNavigate();
-  const handleApplyClick = () => {
-    navigate("/application");
-  };
   return (
     <div className="cyber-security-page">
-      <section className="program-sectioni">
-        <div className="program-containeri">
-          <div className="program-lefti">
-            <h1 className="tittlei">SIGURI KIBERNETIKE</h1>
-            <h2 className="subttitlei">6 muaj trajnim & 6 muaj praktikë</h2>
-
-            <p className="dessci">
-              Siguria kibernetike është një nga profesionet më të rëndësishme
-              dhe të kërkuara në epokën digjitale.
-            </p>
-
-            <button className="apply-btnn" onClick={handleApplyClick}>
-              Apply Now <i className="fa-solid fa-arrow-right"></i>
-            </button>
-          </div>
-
-          <form className="program-formmi">
-            <div className="roww">
-              <div className="fielddi">
-                <label>Emër</label>
-                <input type="text" />
-              </div>
-
-              <div className="fielddi">
-                <label>Mbiemër</label>
-                <input type="text" />
-              </div>
-            </div>
-
-            <div className="fielddi">
-              <label>Numri telefonit</label>
-              <input type="text" />
-            </div>
-
-            <div className="fielddi">
-              <label>Email</label>
-              <input type="email" />
-            </div>
-
-            <div className="fielddi">
-              <label>Message</label>
-              <textarea rows="4"></textarea>
-            </div>
-
-            <button className="submit-btnn">SUBMIT APLICATION</button>
-          </form>
-        </div>
-      </section>
+   
 
       <StatCard />
       <SectionOfProgram />
@@ -127,7 +73,6 @@ const CyberSecurity = () => {
       <StudentFeedback />
       <OurTeam />
 
-
       <div className="hero-suksesi">
         {" "}
         <div className="container">
@@ -150,7 +95,6 @@ const CyberSecurity = () => {
           </p>{" "}
         </div>{" "}
       </div>
-      <ApplyOfferForm/>
     </div>
   );
 };

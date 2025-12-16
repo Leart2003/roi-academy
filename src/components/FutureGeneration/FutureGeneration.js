@@ -3,7 +3,10 @@ import "./FutureGeneration.css";
 import StatCard from "../StatCard/StatCard";
 import SectionOfProgram from "../SectionOfProgram/SectionOfProgram";
 import OurTeam from "../OurTeam/OurTeam";
-import Footer from "../Footer/Footer";
+import SecuredTraining from "../SecuredTraining/SecuredTraining";
+import StudentFeedback from "../StudentFeedback/StudentFeedback";
+import ImageSlider from "../ImageSlider/ImageSlider";
+import MonthlyProgram from "../MonthlyProgram/MonthlyProgram";
 
 const FutureGeneration = () => {
   return (
@@ -68,8 +71,13 @@ const FutureGeneration = () => {
           </ul>
         </div>
       </div>
-      <OurTeam />
 
+      <SecuredTraining />
+      <StudentFeedback />
+
+      <OurTeam />
+      <ImageSlider />
+      <MonthlyProgram />
     </div>
   );
 };
