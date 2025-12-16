@@ -16,6 +16,8 @@ const Header = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   }
 
+  const checkActiveClass = ({ isActive }) => (isActive ? "active" : "");
+
   return (
     <header className="header">
       <div className="header__left">
@@ -27,9 +29,10 @@ const Header = () => {
           />
         </Link>
       </div>
-        <div className="header__center">
-          <nav className={`header__nav ${isMobileMenuOpen ? "active" : ""}`}>
-            <ul className={isMobileMenuOpen ? "active" : ""}>
+      <div className="header__center">
+        <nav className='header__nav'>
+          <ul className={`nav-top ${isMobileMenuOpen ? "active" : ""}`}>
+            <div className="dropdown">
               <li>
               <div className="dropdown">
                 
@@ -56,39 +59,39 @@ const Header = () => {
                   </div>
               </div>
                 </li>
+            </div>
 
-              <li className="active">
-                <Link to="/programet-1-2-mujore">Programet 1–2 mujore</Link>
-              </li>
-  <li>
-              <Link to="/Future-generation">
-                Future Generations
-              </Link>
-              </li>
-              <li>
-              <Link to={"/Roi-Kids"}>
-                ROI Kids
-              </Link>
-              </li>
-              <li>
-              <Link to={"/Rreth-Roit"}>
-                Rreth ROI Academy
-              </Link>
-              </li>
-              <li className="apply-btn-mobile">
-                <button className="apply-bttn" onClick={handleApplyClick}>
-                  Apply Now
-                </button>
-              </li>
-            </ul>
-          </nav>
-        </div>
+            <li>
+              <Link className={checkActiveClass} to="/programet-1-2-mujore">Programet 1–2 mujore</Link>
+            </li>
+<li>
+            <Link className={checkActiveClass} to="/Future-generation">
+              Future Generations
+            </Link>
+</li>
+<li>
+            <Link className={checkActiveClass} to={"/Roi-Kids"}>
+              ROI Kids
+            </Link>
+            </li>
+            <li><Link className={checkActiveClass} to={"/Rreth-Roit"}>
+              Rreth ROI Academy
+            </Link>
+            </li>
+            <li className="apply-btn-mobile">
+              <button className="apply-bttn" onClick={handleApplyClick}>
+                Apply Now
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
 
-        <div className="header__right">
-          <button className="apply-bttn" onClick={handleApplyClick}>
-            Apply Now
-          </button>
-        </div>
+      <div className="header__right">
+        <button className="apply-bttn" onClick={handleApplyClick}>
+          Apply Now
+        </button>
+      </div>
       <div className="header__mobile__icon" onClick={toggleMobileMenu}>
         <FontAwesomeIcon icon="fa-solid fa-bars" className="mobile-icon"/>        
       </div>
