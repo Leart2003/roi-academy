@@ -11,14 +11,17 @@ import DigitalMarketing from "./Pages/DigitalMarketing";
 import RrethRoi from "./Pages/rrethRoit";
 import FutureGeneration from "./components/FutureGeneration/FutureGeneration";
 import CyberSecurity from "./components/CyberSecurity/CyberSecurity";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <BrowserRouter>
       <Layout>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/programet-1-2-mujore" element={<Programs12Page />} />
+          <Route path="/all-programs" element={<Programs6 />} />
           <Route path="/digital-marketing" element={<DigitalMarketing />} />
           <Route path="/CyberSecurity" element={<CyberSecurity />} />
           <Route path="/application" element={<ApplicationForm />} />

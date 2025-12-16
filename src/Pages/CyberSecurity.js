@@ -16,8 +16,6 @@ const CyberSecurity = () => {
 
   return (
     <div className="cyber-security-page">
-   
-
       <StatCard />
       <SectionOfProgram />
 
