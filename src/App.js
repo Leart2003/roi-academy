@@ -11,6 +11,7 @@ import DigitalMarketing from "./Pages/DigitalMarketing";
 import RrethRoi from "./Pages/rrethRoit";
 import FutureGeneration from "./components/FutureGeneration/FutureGeneration";
 import CyberSecurity from "./components/CyberSecurity/CyberSecurity";
+import AllPrograms from "./Pages/AllPrograms";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/programet-1-2-mujore" element={<Programs12Page />} />
+          <Route path="/all-programs" element={<AllPrograms />} />
           <Route path="/digital-marketing" element={<DigitalMarketing />} />
           <Route path="/CyberSecurity" element={<CyberSecurity />} />
           <Route path="/application" element={<ApplicationForm />} />

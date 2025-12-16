@@ -30,19 +30,22 @@ const Header = () => {
                   Programet 6-12 mujore ▾
                 </Link>
                 <div className="dropdown-content">
-                  <span className="anchor">Të gjitha programet</span>
-                  <Link to="/training-programming" className="anchor">
-                    Trajnim për programim
+                  <Link to="/all-programs" className="active">
+                    <span className="anchor">Të gjitha programet</span>
                   </Link>
-                  <span className="anchor">
-                    <Link to="/digital-marketing" className="active">
+                  <Link to="/training-programming" className="active">
+                    <span className="anchor">Trajnim për programim</span>
+                  </Link>
+                  <Link to="/digital-marketing" className="active">
+                    <span className="anchor">
                       Trajnim për Digital Marketing
-                    </Link>
-                  </span>
-                  <Link to={"/CyberSecurity"}>
-                     <span className="anchor">Trajnim për Siguri Kibernetike</span>
+                    </span>
                   </Link>
-               
+                  <Link to={"/CyberSecurity"}>
+                    <span className="anchor">
+                      Trajnim për Siguri Kibernetike
+                    </span>
+                  </Link>
                 </div>
               </li>
             </div>
