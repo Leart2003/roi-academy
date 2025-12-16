@@ -71,8 +71,6 @@ const CyberSecurity = () => {
           </form>
         </div>
       </section>
-
-      <StatCard />
       <SectionOfProgram />
 
       <section className="cyber-section">
@@ -127,7 +125,6 @@ const CyberSecurity = () => {
       <StudentFeedback />
       <OurTeam />
 
-
       <div className="hero-suksesi">
         {" "}
         <div className="container">
@@ -150,7 +147,7 @@ const CyberSecurity = () => {
           </p>{" "}
         </div>{" "}
       </div>
-      <ApplyOfferForm/>
+      <ApplyOfferForm />
     </div>
   );
 };
