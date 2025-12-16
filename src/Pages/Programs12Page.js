@@ -21,7 +21,6 @@ const Programs12Page = () => {
             Apply Now <i className="fa-solid fa-arrow-right"></i>
           </button>
         </div>
-        <ApplicationForm isDark={true} hideInterestedInput={true} />
       </div>
       <StatsSection />
       <ProgramsCleanView />
