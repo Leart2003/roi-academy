@@ -12,6 +12,7 @@ const CourseCard = ({
   rating,
   numberRatings,
   pagesa,
+  onClickApply,
 }) => {
   return (
     <div className="course-card">
@@ -33,7 +34,7 @@ const CourseCard = ({
       </div>
       <div className="course-footer">
         <p className="installments">{pagesa}</p>
-        <button className="apply-btn-small">Apply Now</button>
+        <button className="apply-btn-small" onClick={onClickApply}>Apply Now</button>
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 import "./SixMonthSection.css"
 
-import ProgramForm from "../ProgramForm/ProgramForm"
+import ApplicationForm from "../ApplicationForm/ApplicationForm"
 
 const ApplyForm = ({ title, description }) => {
   return (
@@ -13,7 +13,7 @@ const ApplyForm = ({ title, description }) => {
           <button className="apply-button">Apply Now →</button>
         </div>
 
-        <ProgramForm />
+        <ApplicationForm isDark={true} hideInterestedInput={true}/>
       </div>
     </>
   )

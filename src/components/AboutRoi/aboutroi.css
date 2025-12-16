@@ -1,10 +1,12 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 .about-roi-container {
+  background: radial-gradient(
+      circle at bottom right,
+      #4054b2 0%,
+      #2f3b73 35%,
+      rgba(47, 59, 115, 0.4) 55%,
+      rgba(47, 59, 115, 0) 70%
+    ),
+    linear-gradient(to right, #1e2432 0%, #1e2432 100%);
   background-color: #1e2432;
   display: flex;
   flex-direction: row;
@@ -12,7 +14,6 @@
   justify-content: center;
   gap: 30px;
   line-height: 1.5;
-
   padding: 40px 0;
   color: #fff;
   text-align: left;
@@ -52,9 +53,9 @@
   border: none;
   cursor: pointer;
 }
-.about-roi-btn:hover{
+.about-roi-btn:hover {
   background-color: #1e2432;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 /* mobile responsive */
 

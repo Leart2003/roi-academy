@@ -11,6 +11,7 @@ const programet6mujore = [
     numberRatings: "1.2K",
     methodology: "Trajnim dhe Praktikë",
     pagesa: "1-12 këste",
+    path: '/training-programming',
   },
   {
     id: 2,
@@ -24,6 +25,7 @@ const programet6mujore = [
     numberRatings: "1.1K",
     methodology: "Trajnim dhe Praktikë",
     pagesa: "1-12 këste",
+    path: '/digital-marketing',
   },
   {
     id: 3,
@@ -37,6 +39,7 @@ const programet6mujore = [
     numberRatings: "900",
     methodology: "Trajnim dhe Praktikë",
     pagesa: "1-12 këste",
+    path: '/cyber-security',
   },
   {
     id: 4,
@@ -50,6 +53,7 @@ const programet6mujore = [
     numberRatings: "1.2k",
     methodology: "Trajnim dhe Praktikë",
     pagesa: "1-12 këste",
+    path: '/application',
   },
   {
     id: 5,
@@ -63,6 +67,7 @@ const programet6mujore = [
     numberRatings: null,
     methodology: "Trajnim dhe Praktikë",
     pagesa: "1-12 këste",
+    path: '/Future-generations',
   },
   {
     id: 6,
@@ -76,6 +81,7 @@ const programet6mujore = [
     numberRatings: "750",
     methodology: "Trajnim dhe Praktikë",
     pagesa: "1-12 këste",
+    path: '/Roi-Kids',
   },
 ]
 

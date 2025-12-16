@@ -1,0 +1,114 @@
+.registration-form {
+  width: 35%;
+  box-shadow: none;
+}
+
+.registration-form-dark {
+  background-color: #ffffff;
+  border-radius: 30px;
+  padding: 30px;
+}
+
+.form-wrapper {
+  width: 100%;
+}
+
+.form-wrapper .form-line {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 18px;
+}
+
+.input-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group.full-field {
+  width: 100%;
+  margin-bottom: 18px;
+}
+
+.input-group label {
+  font-size: 14px;
+  color: #5a5a5a;
+  margin-bottom: 6px;
+  font-family: Latto, sans-serif;
+}
+
+.input-group input {
+  /* width: 100%; */
+  height: 44px;
+  padding: 0 14px;
+  border-radius: 14px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  background: #ffffff;
+  outline: none;
+}
+
+.input-group textarea {
+  width: 100%;
+  height: 100px;
+  padding: 12px 10px;
+  border-radius: 14px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  background: #ffffff;
+  outline: none;
+  resize: none;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  border-color: #b0b0b0;
+}
+
+.form-submit-button {
+  width: 100%;
+  height: 48px;
+  margin-top: 10px;
+  border-radius: 15px;
+  border-color: #1e2432;
+  background-color:  #1e2432;
+  color: #ffffff;
+  font-weight: 600;
+  /* height: 5vh; */
+}
+
+.form-submit-button:hover {
+  background-color: #4a5ba8;
+}
+
+/* --- Tablet --- */
+@media (max-width: 1024px) {
+  .registration-form {
+    max-width: 100%;
+    padding-right: 0;
+    margin-top: 30px;
+  }
+}
+
+/* --- Mobile --- */
+@media (max-width: 768px) {
+  .registration-form {
+    width: 100%;
+    margin-top: -30px;
+  }
+
+  .input-group input,
+  .input-group textarea {
+    font-size: 13px;
+    padding: 8px 10px;
+  }
+
+  .form-submit-button {
+    height: 42px;
+    font-size: 13px;
+  }
+
+  .app-wrapper {
+    padding: 20px 20px;
+  }
+}

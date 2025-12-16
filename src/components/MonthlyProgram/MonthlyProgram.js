@@ -1,9 +1,11 @@
-import "./MonthlyProgram.css";
-import programet6mujore from "../../Data/programet6mujore";
-import CourseCard from "./CourseCard";
-import "./MonthlyProgram.css";
+import "./MonthlyProgram.css"
+import programet6mujore from "../../Data/programet6mujore"
+import CourseCard from "./CourseCard"
+import "./MonthlyProgram.css"
+import { useNavigate } from "react-router"
 
 const MonthlyProgram = () => {
+  const navigate = useNavigate();
   return (
     <div>
       <div className="head-container">
@@ -24,6 +26,7 @@ const MonthlyProgram = () => {
             numberRatings={item.numberRatings}
             methodology={item.methodology}
             pagesa={item.pagesa}
+            onClickApply={() => navigate(item.path)}
           />
         ))}
       </div>
