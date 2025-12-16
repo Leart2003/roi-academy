@@ -19,7 +19,6 @@ const RoiKids = () => {
       />
       <StatsSection />
       <Ofer />
-      {/* {Missing component} */}
       <RoiInfo />
       <QellimiSection />
       <StudentFeedback />

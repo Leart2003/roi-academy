@@ -1,4 +1,4 @@
-import "./ProgramForm"
+import "./Programform.css"
 const ProgramForm = () => {
   return (
     <div className="program-form-wrapper">
@@ -23,11 +23,6 @@ const ProgramForm = () => {
         <div className="field full">
           <label>Email</label>
           <input type="email" />
-        </div>
-
-        <div className="field full">
-          <label>Për cilin trajnim jeni i/e interesuar?</label>
-          <input type="text" />
         </div>
 
         <div className="field full">

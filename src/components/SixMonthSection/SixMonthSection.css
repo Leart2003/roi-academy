@@ -4,6 +4,7 @@
   align-items: center;
   padding: 60px 120px;
   gap: 80px;
+  height: 550px;
   color: white;
   background: #1e2432;
 }
@@ -22,7 +23,7 @@
   border: none;
   padding: 20px 40px;
   border-radius: 6px;
-  font-weight: 600;
+
   cursor: pointer;
   border: 2.5px solid white;
 }
@@ -30,14 +31,4 @@
 .apply-button:hover {
   background-color: white;
   color: black;
-}
-.program-form-wrapper {
-  width: 420px;
-  background-color: #ffffff;
-  padding: 30px;
-  border-radius: 22px;
-  height: 500px;
-  color: #e3e3e3;
-  margin-left: auto;
-  flex-shrink: 0;
 }
