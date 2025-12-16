@@ -12,7 +12,7 @@ const Loginform = () => {
   return (
     <div className="home-intro-container">
       <img
-        src='/assets/images/background-image.jpg'
+        src="/assets/images/background-image.jpg"
         alt="Background"
         className="background-image"
       />

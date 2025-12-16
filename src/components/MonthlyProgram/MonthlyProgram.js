@@ -8,8 +8,11 @@ const MonthlyProgram = () => {
   const navigate = useNavigate();
   return (
     <div>
-      <h2>Programet 6-12 mujore</h2>
-      <button className="apply-btn">Të gjitha programet</button>
+      <div className="head-container">
+        <h2>Programet 6-12 mujore</h2>
+        <button className="apply-btn">Të gjitha programet</button>
+      </div>
+
       <div className="cards-wrapper">
         {programet6mujore.map((item) => (
           <CourseCard
@@ -28,7 +31,7 @@ const MonthlyProgram = () => {
         ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default MonthlyProgram
+export default MonthlyProgram;

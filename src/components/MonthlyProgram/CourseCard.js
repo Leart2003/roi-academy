@@ -1,6 +1,6 @@
-import MonthlyProgram from "./MonthlyProgram"
-import programet6mujore from "../../Data/programet6mujore"
-import "./MonthlyProgram.css"
+import MonthlyProgram from "./MonthlyProgram";
+import programet6mujore from "../../Data/programet6mujore";
+import "./MonthlyProgram.css";
 
 const CourseCard = ({
   imageUrl,
@@ -34,10 +34,10 @@ const CourseCard = ({
       </div>
       <div className="course-footer">
         <p className="installments">{pagesa}</p>
-        <button className="apply-btn" onClick={onClickApply}>Apply Now</button>
+        <button className="apply-btn-small" onClick={onClickApply}>Apply Now</button>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default CourseCard
+export default CourseCard;

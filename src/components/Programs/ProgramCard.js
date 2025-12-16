@@ -1,5 +1,5 @@
-import React from "react"
-import { useNavigate } from "react-router-dom"
+import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const ProgramCard = ({
   title,
@@ -8,11 +8,11 @@ const ProgramCard = ({
   bullets,
   badgeColor,
 }) => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const handleApplyClick = () => {
-    navigate("/application")
-  }
+    navigate("/application");
+  };
 
   return (
     <div className="program-card">
@@ -35,7 +35,7 @@ const ProgramCard = ({
         </button>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ProgramCard
+export default ProgramCard;
