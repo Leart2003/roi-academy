@@ -56,18 +56,18 @@ const Footer = () => {
         </div>
         <div className="programs">
           <h4>Programet</h4>
-          <a> - 6 muaj</a>
-          <a> - 1-2 muaj</a>
-          <a> - Future Generations</a>
-          <a> - ROI Kids</a>
+          <a href="/Programet-6-mujore"> - 6 muaj</a>
+          <a href="/programet-1-2-mujore"> - 1-2 muaj</a>
+          <a href="/Future-generation"> - Future Generations</a>
+          <a href="/Roi-Kids"> - ROI Kids</a>
         </div>
         <div className="quick-links">
           <h4>Quick Links</h4>
-          <a>- Ballina</a>
-          <a>- Programet</a>
-          <a>- Rreth ROI Academy</a>
-          <a>- Ekipi</a>
-          <a>- Blogu</a>
+          <a href="/">- Ballina</a>
+          <a href="/Programet-6-mujore">- Programet</a>
+          <a href="/Rreth-Roit">- Rreth ROI Academy</a>
+          <a href="/">- Ekipi</a>
+          <a href="/">- Blogu</a>
         </div>
         <div className="subscribe">
           <h4>Subscribe</h4>
@@ -75,7 +75,9 @@ const Footer = () => {
             <input className="input-style" placeholder="Email"></input>
             <button className="submit-button">SUBMIT</button>
           </form>
-          <h4>ROI Academy is part of:</h4>
+          <h4 className="h4-style">
+            ROI Academy is <br /> part of:
+          </h4>
           <img
             className="roi-holding"
             src="/assets/images/ROI-LOGO_6-Maj_Final-22-768x339.png"
@@ -139,7 +141,6 @@ const Footer = () => {
           Developed by <strong>Sharp Group</strong>
         </p>
       </div>
-      ;
     </div>
   );
 };

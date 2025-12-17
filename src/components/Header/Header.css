@@ -159,6 +159,7 @@
 
 .dropdown-content .anchor:hover {
   background-color: #1e2432;
+  width: auto;
   color: white;
 }
 
@@ -175,7 +176,6 @@
 .apply-btn-mobile button {
   display: none;
 }
-
 
 @media screen and (max-width: 768px) {
   .header {
@@ -211,13 +211,15 @@
     padding-bottom: 10px;
   }
 
-  .header__nav ul li, a {
+  .header__nav ul li,
+  a {
     width: 100%;
     text-align: center;
     padding: 5px 0;
   }
 
-  .header__nav ul li, a{
+  .header__nav ul li,
+  a {
     width: 100%;
     text-align: center;
     padding: 5px 0;
@@ -236,5 +238,4 @@
   .mobile-icon {
     display: block;
   }
-  
 }
