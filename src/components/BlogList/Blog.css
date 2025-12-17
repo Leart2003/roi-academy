@@ -1,0 +1,54 @@
+.container {
+    width: 1200px;
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.blog-item-container {
+    width: 70%;
+}
+
+.blog-item-container p {
+    margin: 0;
+}
+
+.search-container {
+    width: 30%;
+}
+
+.blog-full-content {
+    white-space: pre-wrap;
+}
+
+.divider {
+    height: 1px;
+    background-color: whitesmoke;
+    margin: 20px 0;
+}
+
+.divider-vertical {
+    width: 1px;
+    background-color: whitesmoke;
+    margin: 0 20px;
+}
+
+.suggested-blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.suggestions .title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.suggested-blog-item img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}

@@ -1,4 +1,4 @@
-import Blog from "../components/Blog/Blog"
+import BlogList from "../components/BlogList/BlogList"
 import Loginform from "../components/Loginform/Loginform"
 import ImageSlider from "../components/ImageSlider/ImageSlider"
 import ProgramsSection from "../components/Programs/ProgramsSection"
@@ -18,7 +18,7 @@ function HomePage() {
       <AboutRoi />
       <StudentFeedback />
       <OurTeam />
-      <Blog />
+      <BlogList />
       <ImageSlider />
     </div>
   )

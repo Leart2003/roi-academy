@@ -12,6 +12,7 @@ import RrethRoi from "./Pages/rrethRoit";
 import FutureGeneration from "./components/FutureGeneration/FutureGeneration";
 import CyberSecurity from "./components/CyberSecurity/CyberSecurity";
 import ScrollToTop from "./components/ScrollToTop";
+import BlogPage from "./Pages/BlogPage";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
             path="/Future-generation"
             element={<FutureGeneration />}
           ></Route>
+          <Route path="/blogs/:id" element={<BlogPage />} />
         </Routes>
       </Layout>
     </BrowserRouter>

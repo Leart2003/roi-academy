@@ -1,14 +1,17 @@
 import React from "react";
-import "./Blog.css";
+import "./BlogList.css";
 import blogList from "../../Data/blogData";
+import { useNavigate } from "react-router-dom";
+
 
 const Blog = () => {
+  const navigate = useNavigate();
   return (
-    <div className="blog-container">
+    <div className="blog-list-container">
       <h2>Blogu</h2>
       <div className="blog-list">
         {blogList.map((item) => (
-          <article>
+          <article onClick={() => navigate(`/blogs/${item.id}`)} className="blog-item" key={item.id}>
             <span className="blog-category">
               {item.category ? item.category : "Uncategorized"}
             </span>
@@ -18,7 +21,7 @@ const Blog = () => {
 
             <div className="blog-content">
               <h3>{item.title}</h3>
-              <p>{item.content}</p>
+              <p className='clamp-3'>{item.content}</p>
               <a href="/">Read More »</a>
             </div>
 
