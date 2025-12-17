@@ -1,13 +1,10 @@
+/* Future Generation Section */
 .future-generation h1 {
   color: #1e2432;
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
 }
 
-/* .future-generation {
-  background-color: #1e2432;
-  color: #ffffff;
-  height: 70vh;
-} */
-
+/* Program Future Section */
 .program-future {
   display: flex;
   align-items: center;
@@ -15,55 +12,140 @@
   gap: 20px;
   padding: 20px;
   color: #1e2432;
+  flex-wrap: wrap;
 }
 
 .program-text {
-  max-width: 30%;
+  max-width: 100%;
+  width: 100%;
   margin: auto;
   color: #1e2432;
 }
 
 .program-text h1 {
-  font-size: 30px;
+  font-size: clamp(1.5rem, 4vw, 2rem);
   margin-bottom: 20px;
   color: #1e2432;
 }
 
+/* Benefits Section */
 .benefits {
-  padding: 2rem;
+  padding: 1.5rem;
   background: #0f1a2b;
   color: #e6eaf0;
 }
 
 .benefits h2 {
-  font-size: 1.75rem;
+  font-size: clamp(1.25rem, 4vw, 1.75rem);
   line-height: 1.2;
   margin: 0 0 1rem 0;
   position: relative;
   width: fit-content;
-  left: 22cap;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: 700;
   color: #fff;
+  text-align: center;
 }
 
 .benefits .benefits-lists {
   display: flex;
-  gap: 10rem;
+  gap: 2rem;
   align-items: flex-start;
   justify-content: center;
+  flex-direction: column;
 }
 
 .benefits .benefits-lists ul {
   list-style: disc;
   padding-left: 1.25rem;
   margin: 0;
+  width: 100%;
 }
 
 .benefits .benefits-lists ul li {
   margin: 0.5rem 0;
   color: #e6eaf0;
+  font-size: clamp(0.875rem, 2.5vw, 1rem);
 }
 
 .benefits .benefits-lists ul li span {
   display: inline;
+}
+
+/* Tablet Screens (768px and up) */
+@media (min-width: 768px) {
+  .program-future {
+    gap: 30px;
+    padding: 30px;
+  }
+
+  .program-text {
+    max-width: 60%;
+  }
+
+  .benefits {
+    padding: 2rem;
+  }
+
+  .benefits h2 {
+    margin-left: 10%;
+  }
+
+  .benefits .benefits-lists {
+    flex-direction: row;
+    gap: 4rem;
+  }
+
+  .benefits .benefits-lists ul {
+    width: auto;
+  }
+}
+
+/* Desktop Screens (1024px and up) */
+@media (min-width: 1024px) {
+  .program-future {
+    gap: 40px;
+    padding: 40px;
+  }
+
+  .program-text {
+    max-width: 40%;
+  }
+
+  .benefits .benefits-lists {
+    gap: 6rem;
+  }
+}
+
+/* Large Desktop Screens (1440px and up) */
+@media (min-width: 1440px) {
+  .program-text {
+    max-width: 30%;
+  }
+
+  .benefits h2 {
+    left: 22cap;
+    margin-left: 0;
+  }
+
+  .benefits .benefits-lists {
+    gap: 10rem;
+  }
+}
+
+/* Extra Small Devices (up to 375px) */
+@media (max-width: 375px) {
+  .program-future {
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .benefits {
+    padding: 1rem;
+  }
+
+  .benefits .benefits-lists {
+    gap: 1.5rem;
+  }
 }
