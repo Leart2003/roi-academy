@@ -1,7 +1,8 @@
 /* Future Generation Section */
 .future-generation h1 {
-  color: #1e2432;
+  color: #ffffff;
   font-size: clamp(1.5rem, 5vw, 2.5rem);
+  text-align: left;
 }
 
 /* Program Future Section */
