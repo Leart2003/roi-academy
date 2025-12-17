@@ -3,7 +3,6 @@ import { teamRow1, teamRow2, teamRow3 } from "../../Data/teamData.js";
 import TeamSliderRow from "./TeamSliderRow";
 
 const OurTeam = () => {
-  // teamRow1,2,3 are defined in your data as [[...items]], so use [0]
   const row1 = teamRow1 ?? [];
   const row2 = teamRow2 ?? [];
   const row3 = teamRow3 ?? [];
@@ -19,8 +18,6 @@ const OurTeam = () => {
           të investojnë në edukimin dhe zhvillimin e tyre profesional.
         </p>
       </div>
-
-      {/* Pass each row array separately */}
       <TeamSliderRow teamRow={row1} />
       <TeamSliderRow teamRow={row2} />
       <TeamSliderRow teamRow={row3} />

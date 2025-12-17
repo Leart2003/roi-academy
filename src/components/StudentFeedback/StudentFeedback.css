@@ -2,9 +2,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  justify-items: center;
   height: 700px;
+  box-sizing: border-box;
   /* background-color: #64748b; */
-  margin: 0 290px;
+  padding: 0 380px;
 }
 
 .feedback-container h2 {
@@ -24,7 +26,9 @@
   flex-direction: column;
   margin: 20px 10px;
   padding: 40px;
-  height: 250px;
+  height: 280px;
+  width: auto;
+  cursor: grab;
 }
 
 .feedback-info {
@@ -63,4 +67,42 @@
 .feedback-card p {
   color: white;
   line-height: 1.5;
+}
+
+
+@media screen and (max-width: 1600px) {
+  
+  
+  .feedback-container {
+      padding: 0 200px;
+  }
+
+}
+
+@media screen and (max-width: 1300px) {
+  
+  
+  .feedback-container {
+      padding: 0 100px;
+  }
+
+}
+
+@media screen and (max-width: 1000px) {
+  
+  .feedback-card {
+  background: #1e2432;
+  border-radius: 12px;
+  /* width: 536.5px; */
+  display: flex;
+  flex-direction: column;
+  margin: 20px 10px;
+  padding: 40px;
+  height: 280px;
+  width: auto;
+}
+  .feedback-container {
+      padding: 30px;
+  }
+
 }
