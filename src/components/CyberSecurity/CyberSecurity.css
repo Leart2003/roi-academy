@@ -247,38 +247,135 @@ max-height: 650px; / mbikqyrje për lartësi të lartë viewporti */
 }
 
 /* Responsiviteti */
+/* ===============================
+   TABLET (max-width: 1024px)
+================================ */
 @media (max-width: 1024px) {
+  /* Cyber section */
   .cyber-container {
-    grid-template-columns: 1fr 1fr;
-    gap: 28px;
+    grid-template-columns: 1fr;
+    gap: 30px;
   }
-  .cyber-title {
-    font-size: 26px;
-  }
+
   .cyber-image {
-    height: 540px;
+    height: 420px;
+  }
+
+  /* Benefits */
+  .benefits h2 {
+    left: 0;
+    margin: 0 auto 1.5rem auto;
+    text-align: center;
+  }
+
+  .benefits .benefits-lists {
+    gap: 4rem;
+  }
+
+  /* Program section */
+  .program-sectioni {
+    height: auto;
+    padding: 40px 40px;
+  }
+
+  .program-containeri {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .program-lefti {
+    width: 100%;
+    text-align: center;
+  }
+
+  .dessci {
+    text-align: center;
+  }
+
+  .program-formmi1 {
+    width: 70%;
+    margin: 40px 0 0 0;
   }
 }
 
-@media (max-width: 800px) {
-  .cyber-container {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .cyber-imageWrap {
-    order: -1;
+/* ===============================
+   MOBILE (max-width: 768px)
+================================ */
+@media (max-width: 768px) {
+  /* Cyber */
+  .cyber-section {
+    padding: 40px 16px;
   }
 
   .cyber-title {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .cyber-paragraph {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .cyber-image {
-    height: 420px; /* përshtatje për mobil */
+    height: 300px;
+  }
+
+  /* Benefits */
+  .benefits {
+    padding: 1.5rem 1rem;
+  }
+
+  .benefits .benefits-lists {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+  }
+
+  /* Hero */
+  .hero-title {
+    font-size: 24px;
+  }
+
+  /* Program */
+  .tittlei,
+  .subttitlei {
+    font-size: 26px;
+    line-height: 1.2;
+  }
+
+  .apply-btnn {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .program-formmi1 {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .roww1 {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+/* ===============================
+   SMALL MOBILE (max-width: 480px)
+================================ */
+@media (max-width: 480px) {
+  .cyber-image {
+    height: 240px;
+  }
+
+  .hero-title {
+    font-size: 22px;
+  }
+
+  .tittlei,
+  .subttitlei {
+    font-size: 22px;
+  }
+
+  .submit-btnn1 {
+    width: 100%;
   }
 }

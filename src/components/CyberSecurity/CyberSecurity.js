@@ -6,6 +6,8 @@ import OurTeam from "../OurTeam/OurTeam";
 import { useNavigate } from "react-router";
 import ApplyOfferForm from "../DigitalMarketing/ApplyOfferForm";
 import ApplicationForm from "../ApplicationForm/ApplicationForm";
+import MonthlyProgram from "../MonthlyProgram/MonthlyProgram";
+import ImageSlider from "../ImageSlider/ImageSlider";
 
 const CyberSecurity = () => {
   const title = "Pse të zgjedhni programin 6-mujor për Siguri Kibernetike?";
@@ -117,6 +119,8 @@ const CyberSecurity = () => {
         </div>{" "}
       </div>
       <ApplyOfferForm />
+      <MonthlyProgram />
+      <ImageSlider />
     </div>
   );
 };

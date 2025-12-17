@@ -7,6 +7,7 @@ import SecuredTraining from "../SecuredTraining/SecuredTraining";
 import StudentFeedback from "../StudentFeedback/StudentFeedback";
 import ImageSlider from "../ImageSlider/ImageSlider";
 import MonthlyProgram from "../MonthlyProgram/MonthlyProgram";
+import ApplyOfferForm from "../DigitalMarketing/ApplyOfferForm";
 
 const FutureGeneration = () => {
   return (
@@ -77,6 +78,7 @@ const FutureGeneration = () => {
 
       <OurTeam />
       <ImageSlider />
+      <ApplyOfferForm />
       <MonthlyProgram />
     </div>
   );

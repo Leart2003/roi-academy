@@ -67,3 +67,70 @@
 .benefits .benefits-lists ul li span {
   display: inline;
 }
+
+
+
+@media (max-width: 768px) {
+  .program-future {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .program-text {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .program-text h1 {
+    font-size: 24px;
+  }
+
+  .benefits {
+    padding: 1.5rem 1rem;
+  }
+
+  .benefits h2 {
+    left: 0;
+    margin: 0 auto 1rem auto;
+    text-align: center;
+  }
+
+  .benefits .benefits-lists {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  .benefits .benefits-lists ul {
+    padding-left: 1rem;
+  }
+}
+
+/* 📱📲 Tablet (768px – 1024px) */
+@media (max-width: 1024px) {
+  .program-text {
+    max-width: 60%;
+  }
+
+  .benefits .benefits-lists {
+    gap: 3rem;
+  }
+
+  .benefits h2 {
+    left: 0;
+    text-align: center;
+    margin: 0 auto 1rem auto;
+  }
+}
+
+/* 💻 Desktop i madh (1440px+) */
+@media (min-width: 1440px) {
+  .program-text h1 {
+    font-size: 34px;
+  }
+
+  .benefits h2 {
+    font-size: 2rem;
+  }
+}
