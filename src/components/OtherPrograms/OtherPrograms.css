@@ -2,7 +2,6 @@
   display: flex;
   flex-wrap: wrap;
   gap: 22px;
-
   padding: 65px;
 }
 .course-Card {
@@ -80,3 +79,54 @@
   cursor: pointer;
   margin-right: 10px;
 }
+
+/* ================= Responsive ================= */
+
+/* Tablete (768px - 1024px) */
+
+
+@media (max-width: 1024px) {
+  .cards-Wrapper {
+    padding: 40px;
+    justify-content: center;
+  }
+
+  .course-Card {
+    width: 280px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+  .cards-Wrapper {
+    padding: 20px;
+    gap: 16px;
+  }
+
+  .course-Card {
+    width: 100%;
+  }
+
+  .course-Img {
+    height: 170px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .course-Description {
+    font-size: 14px;
+  }
+
+  .apply-Btn {
+    padding: 8px 14px;
+    font-size: 11px;
+  }
+}
+
