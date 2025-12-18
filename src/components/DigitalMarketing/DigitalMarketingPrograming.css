@@ -8,7 +8,7 @@
   font-size: 14px;
 }
 
-.program-containeri {
+.program-container-a {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -17,7 +17,7 @@
   gap: 20;
 }
 
-.program-lefti {
+.program-left-a {
   align-content: center;
   flex-wrap: wrap;
   position: relative;
@@ -26,7 +26,7 @@
   padding: 10px;
 }
 
-.tittlei {
+.tittle-a {
   font-size: 37.5px;
   font-weight: 600;
   color: #ffffff;
@@ -35,7 +35,7 @@
   padding: 0;
 }
 
-.subttitlei {
+.subttitle-a {
   font-weight: 600;
   color: #ffffff;
   font-size: 37.5px;
@@ -45,7 +45,7 @@
   line-height: 1;
 }
 
-.dessci {
+.dessc-a {
   color: #ffffff;
   line-height: 1.6;
   text-align: left;
@@ -56,7 +56,7 @@
   width: 100%;
 }
 
-.apply-btnn {
+.apply-btnn-a {
   padding: 16px 40px;
   background: transparent;
   border: 2px solid #ffffff;
@@ -68,11 +68,11 @@
   font-family: Poppins, sans-serif;
 }
 
-.apply-btnn:hover {
+.apply-btnn-a:hover {
   background: #ffffff;
   color: #1e2432;
 }
-.program-formmi {
+.program-formm-a {
   background: #ffffff;
   padding: 23px;
   border-radius: 20px;
@@ -84,21 +84,21 @@
   justify-content: space-around;
 }
 
-.fielddi {
+.fieldd-a {
   display: flex;
   flex-direction: column;
   gap: 6px;
   width: 100%;
 }
 
-.fielddi label {
+.fieldd-a label {
   font-size: 14px;
   font-family: Lato, sans-serif;
   font-weight: 500;
   color: #a1a1a1;
 }
 
-.program-formm textarea {
+.program-formm-a textarea {
   width: 100%;
   padding: 10px;
   border-radius: 8px;
@@ -106,12 +106,12 @@
   font-size: 13px;
 }
 
-.roww {
+.roww-a {
   display: flex;
   gap: 25px;
 }
 
-.submit-btnn {
+.submit-btnn-a {
   background: #1e2432;
   color: #ffffff;
   padding: 0px 20px;
@@ -126,11 +126,83 @@
   letter-spacing: 2px;
 }
 
-.submit-btnn:hover {
+.submit-btnn-a:hover {
   opacity: 0.95;
   background-color: #4054b2;
 }
 
-.roww .fieldd input {
+.roww-a .fieldd-a input {
   margin-right: 12px;
+}
+
+@media (max-width: 1024px) {
+  .digital-marketing-program-section {
+    height: fit-content;
+    padding: 30px;
+  }
+
+  .program-container-a {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .program-left-a {
+    width: 100%;
+  }
+
+  .dessc-a {
+    max-width: 100%;
+  }
+
+  .program-formm-a {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .digital-marketing-program-section {
+    padding: 30px;
+  }
+
+  .program-container-a {
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 100px;
+    gap: 30px;
+  }
+
+  .tittle-a,
+  .subttitle-a {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .dessc-a {
+    font-size: 14px;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .apply-btnn-a {
+    padding: 12px 25px;
+    font-size: 14px;
+  }
+
+  .program-formm-a {
+    width: 100%;
+    height: auto;
+    padding: 50px;
+  }
+
+  .roww-a {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .roww-a .fieldd-a input {
+    margin-right: 0;
+  }
 }

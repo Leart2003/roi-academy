@@ -82,7 +82,13 @@
 }
 
 @media screen and (max-width: 925px) {
-  .registration-form {
+  .registration-form-dark {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .registration-form-dark {
     width: 100%;
   }
 }

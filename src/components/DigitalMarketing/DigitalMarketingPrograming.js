@@ -11,17 +11,17 @@ const DigitalMarketingPrograming = () => {
   };
   return (
     <section className="digital-marketing-program-section">
-      <div className="program-containeri">
-        <div className="program-lefti">
-          <h1 className="tittlei">DIGITAL MARKETING</h1>
-          <h2 className="subttitlei">6 muaj trajnim & 6 muaj praktikë</h2>
+      <div className="program-container-a">
+        <div className="program-left-a">
+          <h1 className="tittle-a">DIGITAL MARKETING</h1>
+          <h2 className="subttitle-a">6 muaj trajnim & 6 muaj praktikë</h2>
 
-          <p className="dessci">
+          <p className="dessc-a">
             Marketingu Digjital është një nga profesionet më të kërkuara në
             tregun vendor dhe ndërkombëtar të punës.
           </p>
 
-          <button className="apply-btnn" onClick={handleApplyClick}>
+          <button className="apply-btnn-a" onClick={handleApplyClick}>
             Apply Now <i className="fa-solid fa-arrow-right"></i>
           </button>
         </div>
