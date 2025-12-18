@@ -30,6 +30,7 @@
   transition: box-shadow 0.2s ease;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 }
 
 .blog-list article:hover {
@@ -120,7 +121,6 @@
   font-size: 12px;
   color: #adadad;
 }
-
 
 @media (max-width: 1024px) {
   .blog-list-container {
