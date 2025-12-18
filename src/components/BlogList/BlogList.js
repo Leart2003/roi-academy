@@ -3,7 +3,6 @@ import "./BlogList.css";
 import blogList from "../../Data/blogData";
 import { useNavigate } from "react-router-dom";
 
-
 const Blog = () => {
   const navigate = useNavigate();
   return (
@@ -11,7 +10,11 @@ const Blog = () => {
       <h2>Blogu</h2>
       <div className="blog-list">
         {blogList.map((item) => (
-          <article onClick={() => navigate(`/blogs/${item.id}`)} className="blog-item" key={item.id}>
+          <article
+            onClick={() => navigate(`/blogs/${item.id}`)}
+            className="blog-item"
+            key={item.id}
+          >
             <span className="blog-category">
               {item.category ? item.category : "Uncategorized"}
             </span>
@@ -21,7 +24,7 @@ const Blog = () => {
 
             <div className="blog-content">
               <h3>{item.title}</h3>
-              <p className='clamp-3'>{item.content}</p>
+              <p className="clamp-3">{item.content}</p>
               <a href="/">Read More »</a>
             </div>
 

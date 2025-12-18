@@ -6,35 +6,55 @@ import "./TeamSliderRow.css";
 import TeamCard from "./TeamCard";
 
 function TeamSliderRow({ teamRow = [] }) {
-  // Safety: ensure array
-  const slides = Array.isArray(teamRow) ? teamRow : [];
+  const rawSlides = Array.isArray(teamRow) ? teamRow : [];
+
+  if (!rawSlides.length) return null;
 
   const settings = {
     dots: false,
-    infinite: true,
+    infinite: rawSlides.length > 4,
     speed: 700,
-    slidesToShow: 4, // cards per row (desktop)
+    slidesToShow: 4, // ≥1200px
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000, // 3 seconds
-    draggable: true,
+    autoplay: rawSlides.length > 4,
+    autoplaySpeed: 3000,
     arrows: false,
-    pauseOnHover: true,
     responsive: [
-      { breakpoint: 1024, settings: { slidesToShow: 4 } },
-      { breakpoint: 768, settings: { slidesToShow: 2 } },
-      { breakpoint: 480, settings: { slidesToShow: 1 } },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: rawSlides.length > 3,
+          autoplay: rawSlides.length > 3,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: rawSlides.length > 2,
+          autoplay: rawSlides.length > 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: rawSlides.length > 1,
+          autoplay: rawSlides.length > 1,
+        },
+      },
     ],
   };
-
-  // If no slides, return nothing (or a placeholder)
-  if (!slides.length) return null;
 
   return (
     <div className="team-slider-row-wrapper">
       <Slider {...settings} className="team-slider-row">
-        {slides.map((person, i) => (
-          <div key={i} className="team-slide">
+        {rawSlides.map((person, i) => (
+          <div key={`${person.id ?? "slide"}-${i}`} className="team-slide">
             <TeamCard {...person} />
           </div>
         ))}
