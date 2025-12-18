@@ -23,24 +23,40 @@
   padding: 30px;
   background-color: #ffffff;
   border-radius: 30px;
-  border: 10px solid rgba(220, 220, 220, 0.4);
-  min-height: 150px;
+
+  border-right: 10px solid #efefef;
+  border-bottom: 10px solid #efefef;
+  border-top: 4px solid #efefef;
+  border-left: 4px solid #efefef;
+  min-height: 110px;
 }
 
 .content-text {
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1.6;
-  color: #4a4a4a;
+  color: #1e2432;
   margin: 0;
 }
 .section-column2 {
   flex: 1 1 45%;
+  height: 250px;
   max-width: 550px;
   min-width: 300px;
 }
 
+.content-box2 {
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 30px;
+
+  border-right: 10px solid #efefef;
+  border-bottom: 10px solid #efefef;
+  border-top: 4px solid #efefef;
+  border-left: 4px solid #efefef;
+  min-height: 50px;
+}
 .content-text2 {
-  font-size: 16px;
+  font-size: 1px;
   line-height: 1.6;
   color: #4a4a4a;
   margin: 0;

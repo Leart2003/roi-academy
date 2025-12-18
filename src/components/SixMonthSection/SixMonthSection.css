@@ -6,6 +6,8 @@
   gap: 80px;
   height: 550px;
   color: white;
+  max-width: 1200px;
+  margin: 0 auto;
   background: #1e2432;
 }
 .left-div {
@@ -32,3 +34,29 @@
   background-color: white;
   color: black;
 }
+/* @media (max-width: 1024px) {
+  .main-container {
+    padding: 50px 60px;
+    gap: 40px;
+  }
+
+  .apply-title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+}
+@media (max-width: 480px) {
+  .apply-title {
+    font-size: 22px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+} */

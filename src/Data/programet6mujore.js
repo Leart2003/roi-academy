@@ -6,12 +6,12 @@ const programet6mujore = [
     backgroundColor: "#1e2432",
     koha: "6 muaj",
     description:
-      "Gjatë këtij programi të specializuar 6-mujor, do të mësoni teknologjitë më të kërkuara në zhvillimin e aplikacioneve web dhe softuerike.",
+      "Gjatë këtij programi të specializuar 6-mujor, do të mësoni teknologjitë më të kërkuara në zhvillimin e aplikacioneve web.",
     rating: 4.9,
     numberRatings: "1.2K",
     methodology: "Trajnim dhe Praktikë",
     pagesa: "1-12 këste",
-    path: '/training-programming',
+    path: "/training-programming",
   },
   {
     id: 2,
@@ -25,7 +25,7 @@ const programet6mujore = [
     numberRatings: "1.1K",
     methodology: "Trajnim dhe Praktikë",
     pagesa: "1-12 këste",
-    path: '/digital-marketing',
+    path: "/digital-marketing",
   },
   {
     id: 3,
@@ -39,7 +39,7 @@ const programet6mujore = [
     numberRatings: "900",
     methodology: "Trajnim dhe Praktikë",
     pagesa: "1-12 këste",
-    path: '/cyber-security',
+    path: "/cyber-security",
   },
   {
     id: 4,
@@ -53,7 +53,7 @@ const programet6mujore = [
     numberRatings: "1.2k",
     methodology: "Trajnim dhe Praktikë",
     pagesa: "1-12 këste",
-    path: '/application',
+    path: "/application",
   },
   {
     id: 5,
@@ -67,7 +67,7 @@ const programet6mujore = [
     numberRatings: null,
     methodology: "Trajnim dhe Praktikë",
     pagesa: "1-12 këste",
-    path: '/Future-generations',
+    path: "/Future-generations",
   },
   {
     id: 6,
@@ -81,7 +81,7 @@ const programet6mujore = [
     numberRatings: "750",
     methodology: "Trajnim dhe Praktikë",
     pagesa: "1-12 këste",
-    path: '/Roi-Kids',
+    path: "/Roi-Kids",
   },
 ]
 

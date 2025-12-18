@@ -15,8 +15,8 @@ const QellimiSection = () => {
 
       <div className="section-column2">
         <h2 className="section-title">Programet</h2>
-        <div className="content-box">
-          <p className="content-text2">
+        <div className="content-box2">
+          <p className="content-text">
             Programet tona janë dizajnuar për të rritur kureshtjen, vetëbesimin
             dhe krijimtarinë, duke shndërruar fëmijët nga përdorues pozitivë të
             teknologjisë në krijues aktivë të saj.
