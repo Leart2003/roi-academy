@@ -8,6 +8,7 @@ import ApplyOfferForm from "../DigitalMarketing/ApplyOfferForm";
 import ApplicationForm from "../ApplicationForm/ApplicationForm";
 import MonthlyProgram from "../MonthlyProgram/MonthlyProgram";
 import ImageSlider from "../ImageSlider/ImageSlider";
+import TrainingCard from "../Tprogramming/TrainingCard";
 
 const CyberSecurity = () => {
   const title = "Pse të zgjedhni programin 6-mujor për Siguri Kibernetike?";
@@ -22,6 +23,43 @@ const CyberSecurity = () => {
   const handleApplyClick = () => {
     navigate("/application");
   };
+
+  const cyberItems = [
+    {
+      title: "Hyrje në Siguri Kibernetike",
+      text: "Njohuri bazë për kërcënimet dhe mbrojtjen e sistemeve.",
+    },
+    {
+      title: "Hakimi Etik (Penetration Testing)",
+      text: "Testimi dhe auditimi i sistemeve për qëndrueshmëri dhe identifikimin e dobësive..",
+    },
+    {
+      title: "Siguria e Sistemeve Operative",
+      text: "Mbrojtja e platformave Windows dhe Linux.",
+    },
+    {
+      title: "Politikat, Implikimet dhe Aspektet Ligjore",
+      text: "Regulloret dhe standardet e sigurisë kibernetike në nivel ndërkombëtar.",
+    },
+    {
+      title: "Siguria e Rrjetave",
+      text: "Identifikimi dhe parandalimi i sulmeve kibernetike në rrjete.",
+    },
+    {
+      title: "Siguria e Aplikacioneve Web",
+      text: "Metodat për mbrojtjen e faqeve dhe aplikacioneve online.",
+    },
+
+    {
+      title: "Menaxhimi dhe Përgjigja ndaj Incidenteve Kibernetike",
+      text: "Strategjitë për mbrojtje dhe rikuperim nga sulmet.",
+    },
+
+    {
+      title: "Cloud Security dhe IoT Security",
+      text: "Mbrojtja e sistemeve të bazuara në cloud dhe pajisjeve të lidhura në internet.",
+    },
+  ];
   return (
     <div className="cyber-security-page">
       <section className="program-sectioni">
@@ -42,7 +80,7 @@ const CyberSecurity = () => {
           <ApplicationForm isDark={true} hideInterestedInput={true} />
         </div>
       </section>
-      <SectionOfProgram />
+      <TrainingCard items={cyberItems} />
 
       <section className="cyber-section">
         <div className="cyber-container">

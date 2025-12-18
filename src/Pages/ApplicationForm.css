@@ -100,3 +100,55 @@
   opacity: 0.95;
   background-color: #4054b2;
 }
+
+/*Tablet*/
+
+@media (max-width: 1024px) {
+  .form-wrappeer {
+    max-width: 900px;
+    height: auto;
+    margin: 60px auto;
+  }
+
+  .form-tittle {
+    font-size: 22px;
+  }
+
+  .form-suub {
+    font-size: 15px;
+  }
+
+  .roow {
+    gap: 14px;
+  }
+}
+
+/*Mobile*/
+@media (max-width: 768px) {
+  .form-wrappeer {
+    margin: 40px auto;
+    padding: 0 15px;
+  }
+
+  .roow {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .two-cols .fiield {
+    flex: 1 1 100%;
+  }
+
+  .form-tittle {
+    font-size: 20px;
+  }
+
+  .form-suub {
+    font-size: 14px;
+  }
+
+  .subbmit-btn {
+    padding: 16px;
+    font-size: 15px;
+  }
+}

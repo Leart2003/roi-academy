@@ -1,51 +1,46 @@
 import "./TrainingCard.css";
 
-const TrainingCard = () => {
+const defaultItems = [
+  {
+    title: "HTML5 & CSS3",
+    text: "Bazat e ndërtimit të faqeve web, dizajni i ndërfaqeve të përdoruesit.",
+  },
+  {
+    title: "MongoDB",
+    text: "Bazat e të dhënave, ruajtja dhe menaxhimi i informacionit.",
+  },
+  {
+    title: "JavaScript",
+    text: "Programimi dinamik për aplikacione interaktive.",
+  },
+  {
+    title: "Git & GitHub",
+    text: "Kontrolli i versioneve dhe bashkëpunimi në projekte.",
+  },
+  {
+    title: "React & Advanced React",
+    text: "Zhvillimi i aplikacioneve moderne me teknologjinë më të avancuar frontend.",
+  },
+  {
+    title: "Node.js",
+    text: "Zhvillimi backend dhe krijimi i API-ve të fuqishme.",
+  },
+];
+
+const TrainingCard = ({ description, items = defaultItems }) => {
   return (
     <div className="training-container">
       <h2 className="title">Çfarë do të mësoni gjatë trajnimit?</h2>
 
-      <p className="subtitle">
-        Gjatë këtij programi të specializuar 6-mujor, do të mësoni teknologjitë
-        më të kërkuara në zhvillimin e aplikacioneve web dhe softuerike:
-      </p>
+      <p className="subtitle">{description}</p>
 
       <div className="grid">
-        <div className="card">
-          <h3>HTML5 & CSS3</h3>
-          <p>
-            Bazat e ndërtimit të faqeve web, dizajni i ndërfaqeve të
-            përdoruesit.
-          </p>
-        </div>
-
-        <div className="card">
-          <h3>MongoDB</h3>
-          <p>Bazat e të dhënave, ruajtja dhe menaxhimi i informacionit.</p>
-        </div>
-
-        <div className="card">
-          <h3>JavaScript</h3>
-          <p>Programimi dinamik për aplikacione interaktive.</p>
-        </div>
-
-        <div className="card">
-          <h3>Git & GitHub</h3>
-          <p>Kontrolli i versioneve dhe bashkëpunimi në projekte.</p>
-        </div>
-
-        <div className="card">
-          <h3>React & Advanced React</h3>
-          <p>
-            Zhvillimi i aplikacioneve moderne me teknologjinë më të avancuar
-            frontend.
-          </p>
-        </div>
-
-        <div className="card">
-          <h3>Node.js</h3>
-          <p>Zhvillimi backend dhe krijimi i API-ve të fuqishme.</p>
-        </div>
+        {items.map((item, index) => (
+          <div className="card" key={index}>
+            <h3>{item.title}</h3>
+            <p>{item.text}</p>
+          </div>
+        ))}
       </div>
     </div>
   );

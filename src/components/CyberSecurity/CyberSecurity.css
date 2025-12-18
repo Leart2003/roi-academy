@@ -7,7 +7,7 @@
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr; /* imazhi më i madh se teksti për balancë më të fortë vizuale */
+  grid-template-columns: 1.2fr 0.8fr;
   gap: 40px;
   align-items: start;
 }
@@ -43,12 +43,13 @@
 
 .cyber-image {
   width: 100%;
-  height: 520px; /* imazhi më i madh në default /
-max-height: 650px; / mbikqyrje për lartësi të lartë viewporti */
+  height: 520px;
+  max-height: 650px;
   border-radius: 6px;
   object-fit: cover;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
+
 .benefits {
   padding: 2rem;
   background: #0f1a2b;
@@ -92,17 +93,20 @@ max-height: 650px; / mbikqyrje për lartësi të lartë viewporti */
   padding: 40px 0;
   background: #f6f7f9;
 }
+
 .hero-suksesi .container {
   max-width: 720px;
   margin: 0 auto;
   padding: 0 20px;
 }
+
 .hero-title {
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 12px;
   color: #1b1b1b;
 }
+
 .hero-desc {
   color: #555;
   line-height: 1.75;
@@ -183,6 +187,7 @@ max-height: 650px; / mbikqyrje për lartësi të lartë viewporti */
   background: #ffffff;
   color: #1e2432;
 }
+
 .program-formmi1 {
   background: #ffffff;
   padding: 23px;
@@ -246,135 +251,97 @@ max-height: 650px; / mbikqyrje për lartësi të lartë viewporti */
   margin-right: 12px;
 }
 
-/* Responsiviteti */
-/* ===============================
-   TABLET (max-width: 1024px)
-================================ */
 @media (max-width: 1024px) {
-  /* Cyber section */
   .cyber-container {
     grid-template-columns: 1fr;
     gap: 30px;
   }
-
   .cyber-image {
     height: 420px;
   }
-
-  /* Benefits */
   .benefits h2 {
     left: 0;
     margin: 0 auto 1.5rem auto;
     text-align: center;
   }
-
   .benefits .benefits-lists {
     gap: 4rem;
   }
-
-  /* Program section */
   .program-sectioni {
     height: auto;
     padding: 40px 40px;
   }
-
   .program-containeri {
     flex-direction: column;
     align-items: center;
   }
-
   .program-lefti {
     width: 100%;
     text-align: center;
   }
-
   .dessci {
     text-align: center;
   }
-
   .program-formmi1 {
     width: 70%;
     margin: 40px 0 0 0;
   }
 }
 
-/* ===============================
-   MOBILE (max-width: 768px)
-================================ */
 @media (max-width: 768px) {
-  /* Cyber */
   .cyber-section {
     padding: 40px 16px;
   }
-
   .cyber-title {
     font-size: 22px;
   }
-
   .cyber-paragraph {
     font-size: 14px;
   }
-
   .cyber-image {
     height: 300px;
   }
-
-  /* Benefits */
   .benefits {
     padding: 1.5rem 1rem;
   }
-
   .benefits .benefits-lists {
     flex-direction: column;
     gap: 1.5rem;
     align-items: flex-start;
   }
-
-  /* Hero */
   .hero-title {
     font-size: 24px;
   }
-
-  /* Program */
   .tittlei,
   .subttitlei {
     font-size: 26px;
     line-height: 1.2;
   }
-
   .apply-btnn {
     width: 100%;
     margin-top: 20px;
   }
-
   .program-formmi1 {
     width: 100%;
     padding: 20px;
   }
-
   .roww1 {
     flex-direction: column;
     gap: 15px;
   }
 }
 
-/* ===============================
-   SMALL MOBILE (max-width: 480px)
-================================ */
 @media (max-width: 480px) {
   .cyber-image {
     height: 240px;
   }
-
   .hero-title {
     font-size: 22px;
   }
-
   .tittlei,
   .subttitlei {
     font-size: 22px;
   }
-
   .submit-btnn1 {
     width: 100%;
   }

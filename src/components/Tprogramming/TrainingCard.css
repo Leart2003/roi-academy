@@ -1,7 +1,10 @@
-body {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
   font-family: sans-serif;
   background: #ffffff;
 }
@@ -10,6 +13,7 @@ body {
   width: 90%;
   max-width: 1300px;
   margin: 0 auto;
+  padding: 20px 0;
 }
 
 .training-container .title {
@@ -32,33 +36,96 @@ body {
   margin-top: 40px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+  gap: 32px;
 }
 
 .card {
   background: #ffffff;
-  border-radius: 12px;
-  padding: 28px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-  transition: 0.2s;
+  border-radius: 20px;
+  padding: 28px 32px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  width: 100%;
 }
 
 .card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
 }
 
 .card h3 {
   margin: 0;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   color: #1e2432;
   font-family: Poppins, sans-serif;
 }
 
 .card p {
-  margin-top: 14px;
+  margin-top: 10px;
+  font-size: 14px;
   color: #7a7a7a;
   line-height: 1.6;
   font-family: Lato, sans-serif;
+  max-width: 95%;
+}
+
+@media (max-width: 1200px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+  }
+  .training-container .subtitle {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .card {
+    padding: 24px 20px;
+  }
+  .card h3 {
+    font-size: 17px;
+  }
+  .card p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .training-container {
+    width: 95%;
+    padding: 10px 0;
+  }
+  .grid {
+    gap: 20px;
+  }
+  .card {
+    padding: 20px 16px;
+  }
+  .card h3 {
+    font-size: 16px;
+  }
+  .card p {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 400px) {
+  .card {
+    padding: 18px 12px;
+  }
+  .card h3 {
+    font-size: 15px;
+  }
+  .card p {
+    font-size: 12px;
+    line-height: 1.4;
+  }
 }

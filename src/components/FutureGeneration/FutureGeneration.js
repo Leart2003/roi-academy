@@ -1,23 +1,27 @@
-import Loginform from "../Loginform/Loginform";
 import "./FutureGeneration.css";
-import StatCard from "../StatCard/StatCard";
 import SectionOfProgram from "../SectionOfProgram/SectionOfProgram";
 import OurTeam from "../OurTeam/OurTeam";
 import SecuredTraining from "../SecuredTraining/SecuredTraining";
 import StudentFeedback from "../StudentFeedback/StudentFeedback";
 import ImageSlider from "../ImageSlider/ImageSlider";
 import MonthlyProgram from "../MonthlyProgram/MonthlyProgram";
+import SixMonthSection from "../SixMonthSection/SixMonthSection";
+import StatsSection from "../../Pages/StatsSection";
 import ApplyOfferForm from "../DigitalMarketing/ApplyOfferForm";
 
 const FutureGeneration = () => {
   return (
     <div className="future-generation">
-      <Loginform
-        title="Future Generation Akademia 3-Vjeçare e ROI Academy"
-        button={<button className="apply-btn">Apliko Tani</button>}
-      />
-      <StatCard />
+      <div className="#ffffff ">
+        <SixMonthSection
+          title={`Future Generations
+Akademia 3-Vjeçare e ROI Academy`}
+          description={""}
+        />
+      </div>
+      <StatsSection />
       <SectionOfProgram />
+      
       <div className="program-future">
         <div className="program-text">
           <h1>Pse të zgjedhni programin Future Generations?</h1>

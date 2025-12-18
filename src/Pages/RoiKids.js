@@ -7,6 +7,7 @@ import StatsSection from "./StatsSection"
 import Ofer from "../components/RoiKidsOfer/roiKidsOfer"
 import RoiInfo from "../components/RoiInfo/RoiInfo"
 import QellimiSection from "../components/QellimiSection/QellimiSection"
+import ApplyOfferForm from "../components/DigitalMarketing/ApplyOfferForm"
 
 const RoiKids = () => {
   return (
@@ -24,12 +25,7 @@ const RoiKids = () => {
       <StudentFeedback />
       <OurTeam />
       <ImageSlider />
-      <div style={{ display: "flex", flexDirection: "column" }}>
-        <SixMonthSection
-          title={"Apliko dhe përfito nga oferta aktuale"}
-          description={"Për të aplikuar, ju lutem plotësoni fushat më poshtë:"}
-        />
-      </div>
+      <ApplyOfferForm />
       <OtherPrograms title="Programet tjera" />
     </div>
   )
