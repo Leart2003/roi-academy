@@ -1,5 +1,4 @@
 import "./CyberSecurity.css";
-import SectionOfProgram from "../SectionOfProgram/SectionOfProgram";
 import SecuredTraining from "../SecuredTraining/SecuredTraining";
 import StudentFeedback from "../StudentFeedback/StudentFeedback";
 import OurTeam from "../OurTeam/OurTeam";
@@ -8,6 +7,7 @@ import ApplyOfferForm from "../DigitalMarketing/ApplyOfferForm";
 import ApplicationForm from "../ApplicationForm/ApplicationForm";
 import MonthlyProgram from "../MonthlyProgram/MonthlyProgram";
 import ImageSlider from "../ImageSlider/ImageSlider";
+import TrainingCardM from "./TrainingCard";
 
 const CyberSecurity = () => {
   const title = "Pse të zgjedhni programin 6-mujor për Siguri Kibernetike?";
@@ -42,7 +42,7 @@ const CyberSecurity = () => {
           <ApplicationForm isDark={true} hideInterestedInput={true} />
         </div>
       </section>
-      <SectionOfProgram />
+      <TrainingCardM />
 
       <section className="cyber-section">
         <div className="cyber-container">
