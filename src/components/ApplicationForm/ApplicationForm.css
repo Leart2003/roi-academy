@@ -81,5 +81,8 @@
   background-color: #4a5ba8;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 925px) {
+  .registration-form {
+    width: 100%;
+  }
 }

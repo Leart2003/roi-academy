@@ -10,10 +10,11 @@
   max-width: 1100px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   color: #ffffff;
   margin: 0 auto;
   gap: 20px;
+  padding: 0px 50px;
 }
 
 .program-left {
@@ -125,13 +126,11 @@
   margin-right: 12px;
 }
 
-/* Responsive Styles */
-
-/* Tablets */
 @media (max-width: 1024px) {
   .program-container {
     flex-direction: column;
     align-items: center;
+    padding: 0px 100px;
     gap: 30px;
   }
 
@@ -140,17 +139,17 @@
   }
 
   .program-formm {
-    width: 350px;
+    width: 100%;
     height: auto;
-    padding: 25px;
   }
 }
 
-/* Mobile */
 @media (max-width: 768px) {
   .program-container {
     flex-direction: column;
-    padding: 0 20px;
+    align-items: center;
+    padding: 0px 100px;
+    gap: 30px;
   }
 
   .tittle,
@@ -173,7 +172,7 @@
   .program-formm {
     width: 100%;
     height: auto;
-    padding: 20px;
+    padding: 50px;
   }
 
   .roww {
