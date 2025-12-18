@@ -9,8 +9,8 @@ body {
 .background-image {
   position: absolute;
   width: 100%;
-  height: 100%;
   object-fit: cover;
+  height: 780px;
   z-index: -1;
   opacity: 0.05;
 }
@@ -71,7 +71,7 @@ body {
 
 .container h1 {
   color: #1e2a3a;
-  font-weight: 600;
+  font-weight: 200;
   margin-bottom: 20px;
   font-size: 40px;
   text-align: left;
@@ -105,76 +105,34 @@ body {
   transition: opacity 0.3s;
 }
 
-/* --- Tablet --- */
-@media (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
   .app-wrapper {
-    flex-direction: column;
-    padding: 40px 50px;
+    width: fit-content;
+    justify-content: space-around;
+  }
+
+  .hero-text h1 {
+    font-size: 40px;
   }
 
   .hero-text p {
-    width: 100%;
+    font-size: 16px;
+    width: 70%;
   }
 
   .hero-button {
-    padding: 12px 50px !important;
-    font-size: 13px;
-  }
-
-  .registration-form {
-    max-width: 100%;
-    padding-right: 0;
-    margin-top: 30px;
+    padding: 20px;
+    font-size: 14px;
   }
 }
 
-/* --- Mobile --- */
-@media (max-width: 768px) {
+@media screen and (max-width: 925px) {
+  .home-intro-container {
+    height: fit-content;
+  }
   .app-wrapper {
+    display: flex;
     flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .app-wrapper .registration-form {
-    width: 100%;
-    margin-top: -30px;
-  }
-
-  .hero-button {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    padding: 20px 0 !important;
-    width: 100%;
-    border-radius: 0;
-    z-index: 1001;
-  }
-
-
-  .hero-text h1 {
-    font-size: 32px;
-  }
-
-  .hero-text p {
-    font-size: 14px;
-  }
-
-  .hero-button {
-    font-size: 12px;
-  }
-
-  .input-group input,
-  .input-group textarea {
-    font-size: 13px;
-    padding: 8px 10px;
-  }
-
-  .form-submit-button {
-    height: 42px;
-    font-size: 13px;
-  }
-
-  .app-wrapper {
-    padding: 20px 20px;
+    padding: 50px;
   }
 }

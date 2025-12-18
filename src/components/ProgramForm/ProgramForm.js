@@ -1,17 +1,19 @@
-import "./Programform.css"
+import "./Programform.css";
 const ProgramForm = () => {
   return (
     <div className="program-form-wrapper">
       <form className="program-form">
         <div className="row">
-          <div className="field">
-            <label>Emër</label>
-            <input className="input" type="text" />
-          </div>
+          <div className="form-first-row">
+            <div>
+              <label>Emër</label>
+              <input className="input" type="text" />
+            </div>
 
-          <div className="field">
-            <label>Mbiemër</label>
-            <input className="input" type="text" />
+            <div>
+              <label>Mbiemër</label>
+              <input className="input" type="text" />
+            </div>
           </div>
         </div>
 
@@ -35,7 +37,7 @@ const ProgramForm = () => {
         </button>
       </form>
     </div>
-  )
-}
+  );
+};
 
-export default ProgramForm
+export default ProgramForm;

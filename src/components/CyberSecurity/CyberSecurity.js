@@ -8,6 +8,7 @@ import ApplicationForm from "../ApplicationForm/ApplicationForm";
 import MonthlyProgram from "../MonthlyProgram/MonthlyProgram";
 import ImageSlider from "../ImageSlider/ImageSlider";
 import TrainingCardM from "./TrainingCard";
+import StatsSection from "../../Pages/StatsSection";
 
 const CyberSecurity = () => {
   const title = "Pse të zgjedhni programin 6-mujor për Siguri Kibernetike?";
@@ -42,6 +43,7 @@ const CyberSecurity = () => {
           <ApplicationForm isDark={true} hideInterestedInput={true} />
         </div>
       </section>
+      <StatsSection />
       <TrainingCardM />
 
       <section className="cyber-section">

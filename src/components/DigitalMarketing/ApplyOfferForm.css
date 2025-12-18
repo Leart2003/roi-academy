@@ -1,6 +1,6 @@
 .appForm-section {
   background: #1e2432;
-  min-height: 100vh;
+  height: 1000px;
   padding: 60px 20px;
   text-align: center;
   color: #ffffff;
@@ -53,7 +53,7 @@
   padding: 12px 14px;
   font-size: 15px;
   outline: none;
-  color: #A1A1A1;
+  color: #a1a1a1;
   font-weight: 400;
 }
 
@@ -87,4 +87,7 @@
 
 .appForm-submit:hover {
   background-color: #4054b2;
+}
+
+@media screen and (max-width: 768px) {
 }

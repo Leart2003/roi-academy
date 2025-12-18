@@ -14,7 +14,7 @@ function TeamSliderRow({ teamRow = [] }) {
     dots: false,
     infinite: rawSlides.length > 4,
     speed: 700,
-    slidesToShow: 4, // ≥1200px
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: rawSlides.length > 4,
     autoplaySpeed: 3000,

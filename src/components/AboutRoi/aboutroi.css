@@ -36,9 +36,9 @@
 }
 
 .check-icon {
-  font-size: 24px; /* rrit ikonën */
-  width: 30px; /* opsionale */
-  height: 30px; /* opsionale */
+  font-size: 24px;
+  width: 30px;
+  height: 30px;
   margin-right: 10px;
 }
 
@@ -57,174 +57,23 @@
   background-color: #1e2432;
   color: #ffffff;
 }
-/* mobile responsive */
 
-/* ======================
-      MOBILE 360px
-======================= */
-@media (max-width: 360px) {
-  .about-roi-container {
-    flex-direction: column;
-    padding: 30px 15px;
-    text-align: center;
-  }
-
-  .about-roi-container img {
-    width: 180px;
-  }
-
-  .about-roi-container h2 {
-    font-size: 28px;
-  }
-
-  .about-roi-container p {
-    font-size: 14px;
-    width: 100%;
-  }
-
-  .about-roi-list span {
-    font-size: 14px;
-  }
-
-  .about-roi-btn {
-    width: 160px;
-    height: 45px;
-    font-size: 12px;
-  }
-}
-
-/* ======================
-      MOBILE 480px
-======================= */
-@media (max-width: 480px) {
-  .about-roi-container {
-    flex-direction: column;
-    gap: 25px;
-    padding: 40px 20px;
-    text-align: center;
-  }
-
-  .about-roi-container img {
-    width: 200px;
-  }
-
-  .about-roi-container h2 {
-    font-size: 30px;
-  }
-
-  .about-roi-container p {
-    width: 100%;
-    font-size: 15px;
-  }
-}
-
-/* ======================
-      MOBILE 576px
-======================= */
-@media (max-width: 576px) {
-  .about-roi-container {
-    flex-direction: column;
-    padding: 50px 20px;
-  }
-
-  .about-roi-container img {
-    width: 220px;
-  }
-}
-
-/* ======================
-          TABLET
-======================= */
-@media (max-width: 768px) {
-  .about-roi-container {
-    flex-direction: column;
-    text-align: center;
-    gap: 30px;
-  }
-
-  .about-roi-container img {
-    width: 240px;
-  }
-
-  .about-roi-container p {
-    width: 90%;
-  }
-}
-
-@media (max-width: 992px) {
-  .about-roi-container {
-    gap: 30px;
-    padding: 50px;
-  }
-
-  .about-roi-container h2 {
-    font-size: 34px;
-  }
-}
-
-/* ======================
-        LAPTOP
-======================= */
 @media (max-width: 1200px) {
   .about-roi-container {
     gap: 30px;
   }
 
   .about-roi-container img {
-    width: 260px;
+    width: 340px;
   }
-}
 
-/* ======================
-       DESKTOP LARGE
-======================= */
-@media (max-width: 1400px) {
-  .about-roi-container h2 {
-    font-size: 38px;
-  }
-}
-
-@media (max-width: 1600px) {
-  /* Zakonisht nuk duhet ndryshuar shumë në këtë pikë */
-}
-
-/* ============= MOBILE 360px ============= */
-@media (max-width: 360px) {
   .about-roi-btn {
-    width: 170px;
-    height: 45px;
-    font-size: 12px;
-  }
-}
-
-/* ============= MOBILE 480px ============= */
-@media (max-width: 480px) {
-  .about-roi-btn {
-    width: 180px;
-    height: 45px;
-    font-size: 13px;
-  }
-}
-
-/* ============= MOBILE 576px ============= */
-@media (max-width: 576px) {
-  .about-roi-btn {
-    width: 190px;
-    height: 45px;
-    font-size: 13px;
-  }
-}
-
-/* ============= TABLET 768px ============= */
-@media (max-width: 768px) {
-  .about-roi-btn {
-    width: 200px;
-    height: 48px;
+    width: 220px;
+    height: 50px;
     font-size: 14px;
   }
 }
 
-/* ============= TABLET LARGE 992px ============= */
 @media (max-width: 992px) {
   .about-roi-btn {
     width: 210px;
@@ -233,18 +82,15 @@
   }
 }
 
-/* ============= LAPTOP 1200px ============= */
-@media (max-width: 1200px) {
-  .about-roi-btn {
-    width: 220px;
-    height: 50px;
-    font-size: 14px;
+@media (max-width: 768px) {
+  .about-roi-container {
+    flex-direction: column;
+    padding: 50px;
   }
-}
 
-/* ============= DESKTOP 1400px ============= */
-@media (max-width: 1400px) {
   .about-roi-btn {
-    width: 220px;
+    width: 200px;
+    height: 48px;
+    font-size: 14px;
   }
 }

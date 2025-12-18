@@ -1,22 +1,22 @@
-import "./CyberSecurity.css"
-import StatCard from "../StatCard/StatCard"
-import SectionOfProgram from "../SectionOfProgram/SectionOfProgram"
-import SecuredTraining from "../SecuredTraining/SecuredTraining"
-import StudentFeedback from "../StudentFeedback/StudentFeedback"
-import OurTeam from "../OurTeam/OurTeam"
+import "./CyberSecurity.css";
+import SectionOfProgram from "../SectionOfProgram/SectionOfProgram";
+import SecuredTraining from "../SecuredTraining/SecuredTraining";
+import StudentFeedback from "../StudentFeedback/StudentFeedback";
+import OurTeam from "../OurTeam/OurTeam";
+import StatsSection from "./StatsSection";
 
 const CyberSecurity = () => {
-  const title = "Pse të zgjedhni programin 6-mujor për Siguri Kibernetike?"
+  const title = "Pse të zgjedhni programin 6-mujor për Siguri Kibernetike?";
   const paragraphs = [
     "Me rritjen e vazhdueshme të kërcënimeve kibernetike, kompanitë dhe institucionet kanë nevojë për ekspertë të specializuar për të mbrojtur të dhënat dhe sistemet potenciale.",
     "Ky trening është ideal për çdo person që dëshiron të fillojë një karrierë të re në fushën e sigurisë kibernetike apo të thellojë aftësitë e tij ekzistuese.",
     "Me programin tonë, do të jeni të aftë të identifikoni dhe të parandaloni sulmet, të menaxhoni sigurinë dhe të luftoni ndërmjet kërcënimeve të ndryshme.",
     "Përveç mësimit të thelluar, ofrohet praktikë në firmat partnere dhe një portofol të gjerë për të nxitur hyrjen në treg.",
-  ]
+  ];
 
   return (
     <div className="cyber-security-page">
-      <StatCard />
+      <StatsSection />
       <SectionOfProgram />
 
       <section className="cyber-section">
@@ -94,7 +94,7 @@ const CyberSecurity = () => {
         </div>{" "}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default CyberSecurity
+export default CyberSecurity;

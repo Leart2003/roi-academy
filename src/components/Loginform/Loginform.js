@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router";
 import "./Loginform.css";
-import ApplicationForm from "../ApplicationForm/ApplicationForm";
+import ProgramForm from "../ProgramForm/ProgramForm";
 
 const Loginform = () => {
   const navigate = useNavigate();
@@ -31,7 +31,7 @@ const Loginform = () => {
           </button>
         </div>
 
-        <ApplicationForm />
+        <ProgramForm />
       </div>
     </div>
   );
