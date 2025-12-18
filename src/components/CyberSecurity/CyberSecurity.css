@@ -96,12 +96,15 @@ max-height: 650px; / mbikqyrje për lartësi të lartë viewporti */
   max-width: 720px;
   margin: 0 auto;
   padding: 0 20px;
+  display: flex;
+  flex-direction: column;
 }
 .hero-title {
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 12px;
   color: #1b1b1b;
+  align-self: center;
 }
 .hero-desc {
   color: #555;
