@@ -58,6 +58,7 @@
 .programs a {
   color: inherit;
   text-decoration: none;
+  text-align: start;
 }
 
 .quick-links {
@@ -70,9 +71,12 @@
   font-size: 15px;
   font-weight: 500;
   padding: 10px;
+  color: inherit;
+  text-decoration: none;
 }
 
 .quick-links a {
+  text-align: start;
   color: inherit;
   text-decoration: none;
 }
@@ -83,6 +87,7 @@
   flex-direction: column;
   align-items: start;
   padding: 10px;
+  padding-right: 30px;
   line-height: 2;
   font-size: 15px;
   font-weight: 500;
@@ -158,19 +163,130 @@
   align-items: center;
   height: 97.5px;
   background: #f3f3f36b;
-  margin: 0;
+  margin-top: 40px;
   padding: 0;
   font-size: 14px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1300px) {
   .footer-container {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+    font-size: 12px;
+    font-weight: inherit;
+    font-family: Poppins, sans-serif;
+    justify-content: center;
+    padding: 20px 10px;
+  }
+
+  .contact {
+    width: 25%;
+    font-size: 12px;
+    line-height: 2;
+  }
+
+  .programs {
+    width: 20%;
+  }
+
+  .quick-links {
+    width: 20%;
+  }
+
+  .subscribe {
+    width: 25%;
   }
 
   .copyrights {
-    margin-bottom: 0px;
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .footer-div {
+    height: 500px;
+  }
+
+  .copyrights {
+    margin-top: 70px;
+  }
+}
+
+@media screen and (max-width: 925px) {
+  .footer-div {
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+  }
+
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 12px;
+    font-weight: inherit;
+    font-family: Poppins, sans-serif;
+  }
+
+  .contact {
+    width: auto;
+    font-size: 12px;
+    line-height: 2;
+  }
+
+  .programs {
+    width: auto;
+    width: auto;
+    text-align: start;
+  }
+
+  .quick-links {
+    padding-left: 10px;
+    width: 50%;
+    margin-left: 40px;
+    text-align: start;
+  }
+
+  .quick-links span {
+    text-align: start;
+  }
+
+  .subscribe {
+    width: 50%;
+  }
+
+  .copyrights {
+    margin-top: 350px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer-div {
+    height: 1330px;
+  }
+
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+  }
+
+  .contact {
+    width: 100%;
+  }
+  .programs {
+    width: 100%;
+    padding-left: 50px;
+  }
+
+  .quick-links {
+    width: auto;
+  }
+
+  .subscribe {
+    width: auto;
+    padding-left: 50px;
+  }
+
+  .copyrights {
+    margin-top: 800px;
+    text-align: center;
   }
 }
