@@ -12,16 +12,15 @@
   font-weight: 600;
 }
 .cards-wrapper {
-  display: flex;
-  gap: 22px;
-  flex-wrap: wrap;
-  padding-left: 25px;
-  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 24px;
+  padding: 50px;
 }
 .course-card {
   font-family: Poppins, sans-serif;
-  width: 350px;
-  height: 510px;
+  width: auto;
+  height: 500px;
   flex-wrap: wrap;
   background: white;
   border-radius: 18px;

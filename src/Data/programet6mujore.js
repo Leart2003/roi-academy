@@ -39,7 +39,7 @@ const programet6mujore = [
     numberRatings: "900",
     methodology: "Trajnim dhe Praktikë",
     pagesa: "1-12 këste",
-    path: "/cyber-security",
+    path: "/CyberSecurity",
   },
   {
     id: 4,
@@ -67,7 +67,7 @@ const programet6mujore = [
     numberRatings: null,
     methodology: "Trajnim dhe Praktikë",
     pagesa: "1-12 këste",
-    path: "/Future-generations",
+    path: "/Future-generation",
   },
   {
     id: 6,

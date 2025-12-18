@@ -29,16 +29,16 @@ body {
 }
 
 .grid {
-  margin-top: 40px;
+  margin-top: 20px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+  gap: 20px;
 }
 
 .card {
   background: #ffffff;
   border-radius: 12px;
-  padding: 28px;
+  padding: 20px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
   transition: 0.2s;
 }
@@ -61,59 +61,4 @@ body {
   color: #7a7a7a;
   line-height: 1.6;
   font-family: Lato, sans-serif;
-}
-
-/*Tablet*/
-
-@media (max-width: 1024px) {
-  .grid {
-    grid-template-columns: 1fr;
-    gap: 24px;
-  }
-
-  .training-container .title {
-    font-size: 22px;
-  }
-
-  .training-container .subtitle {
-    font-size: 15px;
-  }
-
-  .card {
-    padding: 24px;
-  }
-}
-
-/*Mobile*/
-
-@media (max-width: 768px) {
-  .training-container {
-    width: 95%;
-  }
-
-  .training-container .title {
-    font-size: 20px;
-  }
-
-  .training-container .subtitle {
-    font-size: 14px;
-    margin-top: 12px;
-  }
-
-  .grid {
-    margin-top: 30px;
-    gap: 20px;
-  }
-
-  .card {
-    padding: 20px;
-  }
-
-  .card h3 {
-    font-size: 18px;
-  }
-
-  .card p {
-    font-size: 14px;
-  }
 }

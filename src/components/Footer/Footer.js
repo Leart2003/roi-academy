@@ -4,6 +4,7 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import { far } from "@fortawesome/free-regular-svg-icons";
 import { fab } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router";
 
 library.add(fas, far, fab);
 
@@ -56,18 +57,36 @@ const Footer = () => {
         </div>
         <div className="programs">
           <h4>Programet</h4>
-          <a href="/Programet-6-mujore"> - 6 muaj</a>
-          <a href="/programet-1-2-mujore"> - 1-2 muaj</a>
-          <a href="/Future-generation"> - Future Generations</a>
-          <a href="/Roi-Kids"> - ROI Kids</a>
+          <Link to="/Programet-6-mujore">
+            <span>- 6 muaj</span>
+          </Link>
+          <Link to="/programet-1-2-mujore">
+            <span>- 1-2 muaj</span>
+          </Link>
+          <Link to="/Future-generation">
+            <span>- Future Generations</span>
+          </Link>
+          <Link to="/Roi-Kids">
+            <span>- ROI Kids</span>
+          </Link>
         </div>
         <div className="quick-links">
           <h4>Quick Links</h4>
-          <a href="/">- Ballina</a>
-          <a href="/Programet-6-mujore">- Programet</a>
-          <a href="/Rreth-Roit">- Rreth ROI Academy</a>
-          <a href="/">- Ekipi</a>
-          <a href="/">- Blogu</a>
+          <Link to="/">
+            <span>- Ballina</span>
+          </Link>
+          <Link to="/Programet-6-mujore">
+            <span>- Programet</span>
+          </Link>
+          <Link to="/Rreth-Roit">
+            <span>- Rreth ROI Academy</span>
+          </Link>
+          <Link to="/">
+            <span>- Ekipi</span>
+          </Link>
+          <Link to="/blogs/1">
+            <span>- Blogu</span>
+          </Link>
         </div>
         <div className="subscribe">
           <h4>Subscribe</h4>

@@ -13,6 +13,7 @@ import FutureGeneration from "./components/FutureGeneration/FutureGeneration";
 import CyberSecurity from "./components/CyberSecurity/CyberSecurity";
 import ScrollToTop from "./components/ScrollToTop";
 import BlogPage from "./Pages/BlogPage";
+import ScrollUpButton from "./ScrollUpButton";
 
 function App() {
   return (
@@ -38,7 +39,9 @@ function App() {
             element={<FutureGeneration />}
           ></Route>
           <Route path="/blogs/:id" element={<BlogPage />} />
+
         </Routes>
+          <ScrollUpButton />
       </Layout>
     </BrowserRouter>
   );
