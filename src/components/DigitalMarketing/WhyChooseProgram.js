@@ -3,8 +3,8 @@ import "./WhyChooseProgram.css";
 
 const WhyChooseProgram = () => {
   return (
-    <div className="why-container">
-      <div className="why-text">
+    <div className="why-containeri">
+      <div className="why-texti">
         <h2>Pse të zgjedhni programin 6-mujor për Marketing Digjital?</h2>
 
         <p>
@@ -32,7 +32,7 @@ const WhyChooseProgram = () => {
         </p>
       </div>
 
-      <div className="why-image">
+      <div className="why-imagei">
         <img
           src="https://roiacademy.net/wp-content/uploads/2025/06/DSC00651-scaled.jpg"
           alt="Classroom"

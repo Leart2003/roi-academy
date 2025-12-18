@@ -249,8 +249,12 @@ max-height: 650px; / mbikqyrje për lartësi të lartë viewporti */
   margin-right: 12px;
 }
 
-/* Responsiviteti */
 @media (max-width: 1024px) {
+  .cyber-section {
+    display: flex;
+    flex-direction: column;
+  }
+
   .cyber-container {
     grid-template-columns: 1fr 1fr;
     gap: 28px;

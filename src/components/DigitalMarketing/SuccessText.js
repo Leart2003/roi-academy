@@ -3,8 +3,8 @@ import "./SuccessText.css";
 
 const SuccessText = () => {
   return (
-    <div className="success-text">
-      <div className="text-block">
+    <div className="success-texti">
+      <div className="text-blocki">
         <h2>Suksesi i pjesëmarrësve</h2>
         <p>
           Deri më tani, në këtë trajnim kanë marrë pjesë rreth 300 kursantë,

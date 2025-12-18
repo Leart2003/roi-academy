@@ -33,3 +33,16 @@
   margin: 0;
   font-weight: 500;
 }
+
+@media screen and (max-width: 768px) {
+  .cert-practice {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .cert-item {
+    width: 100%;
+  }
+}
